@@ -1,4 +1,7 @@
+import { useState } from "react"
+
 function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav>
       <ul className="nav-left">
@@ -14,7 +17,15 @@ function NavBar() {
       <ul className="nav-center">
         <li><a href="#" className="brand">PD Marketing</a></li>
       </ul>
-      <ul className="nav-right">
+
+      {/* Hamburger button */}
+      <button
+        className="hamburger"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        ☰
+      </button>
+      <ul className={`nav-right ${menuOpen ? 'open' : ''}`}>
         <li><a href="#services">บริการ</a></li>
         <li><a href="#team">ทีมงาน</a></li>
         <li><a href="#contact" className="cta">ติดต่อ</a></li>

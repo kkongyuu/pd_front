@@ -1,7 +1,7 @@
 function Services() {
   return (
     <section id="services" className="services">
-      <div className="section-content">
+        <div className="section-content">
         <h2>บริการของเรา</h2>
         <p>บริการด้านกลยุทธ์ คอนเทนต์ โฆษณา การวิเคราะห์ และสร้างผลลัพธ์ทางธุรกิจ</p>
       </div>

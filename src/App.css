@@ -383,8 +383,83 @@ input:checked+.slider:before {
   transform: translateX(24px);
 }
 
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  z-index: 1001;
+}
 
 
+@media (max-width: 768px) {
+
+  nav {
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 1rem;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    display: none;
+    padding: 1rem 0;
+  }
+
+  .nav-right.open {
+    display: flex;
+  }
+
+  .nav-right li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
 
 
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  .section-content h2 {
+    font-size: 1.8rem;
+  }
+  .section-content p {
+    font-size: 1rem;
+  }
+
+
+   section {
+    padding: 4rem 2rem;
+  }
+
+  .team-member {
+    width: 60%;
+    margin: 1rem auto;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+ 
+}
+
+@media (max-width: 768px) {
+  
+  
+}
 
