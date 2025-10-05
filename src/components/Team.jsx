@@ -1,12 +1,24 @@
+import num1 from '../assets/img/profile/06.jpg'
+import num2 from '../assets/img/profile/01.jpg'
+import num3 from '../assets/img/profile/07.jpg'
+import num4 from '../assets/img/profile/03.jpg'
+import num5 from '../assets/img/profile/02.jpg'
+import num6 from '../assets/img/profile/09.jpg'
+import num7 from '../assets/img/profile/04.jpg'
+import num8 from '../assets/img/profile/08.jpg'
+import num9 from '../assets/img/profile/10.jpg'
+import num10 from '../assets/img/profile/05.jpg'
 const teamMembers = [
-  { name: "คุณเอ", img: "https://pdmarketinginnovate.com/wp-content/uploads/2022/10/s__14139397.jpg?strip=info&w=800" },
-  { name: "คุณบี", img: "https://pdmarketinginnovate.com/wp-content/uploads/2022/10/s__14139398.jpg?strip=info&w=800" },
-  { name: "คุณซี", img: "https://pdmarketinginnovate.com/wp-content/uploads/2022/10/s__14139399.jpg?strip=info&w=800" },
-  { name: "คุณดี", img: "https://pdmarketinginnovate.com/wp-content/uploads/2024/09/s__14139395-edited.jpg" },
-  { name: "คุณเอ", img: "https://pdmarketinginnovate.com/wp-content/uploads/2022/10/s__14139397.jpg?strip=info&w=800" },
-  { name: "คุณบี", img: "https://pdmarketinginnovate.com/wp-content/uploads/2022/10/s__14139398.jpg?strip=info&w=800" },
-  { name: "คุณซี", img: "https://pdmarketinginnovate.com/wp-content/uploads/2022/10/s__14139399.jpg?strip=info&w=800" },
-  { name: "คุณดี", img: "https://pdmarketinginnovate.com/wp-content/uploads/2024/09/s__14139395-edited.jpg" },
+  { name: "คุณเนตร แก้วปัญญา แซ่กอ", img: num1, position: "Manager Develop Ai" },
+  { name: "คุณก้อง ธิติ ทรัพธนาธร", img: num2, position: "Manager Develop Ai" },
+  { name: "คุณมาย อัจฉรา โคตรก่ำ", img: num3, position: "Manager Develop Ai" },
+  { name: "คุณฐานิตา กิจศิริ", img: num4, position: "Manager Develop Ai" },
+  { name: "คุณน๊อต นฤเบศปริญญานันทการ", img: num5, position: "Manager Develop Ai" },
+  { name: "คุณส้มสุชาดา บุตรรม", img: num6, position: "Manager Develop Ai" },
+  { name: "น้องเติ้ล ", img: num7, position: "Manager Develop Ai" },
+  { name: "น้องสตางค์", img: num8, position: "Manager Develop Ai" },
+  { name: "พี่เอิร์ธ ภานุพงศ์​ เศษวงศ์ ", img: num9, position: "Manager Develop Ai" },
+  { name: "พี่ตัง เอกลักษณ์ กันยวม ", img: num10, position: "Manager Develop Ai" },
 ]
 
 function Team() {

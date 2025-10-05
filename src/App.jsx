@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useEffect } from 'react'
 import './App.css'
 import NavBar from './components/NavBar'
@@ -9,6 +10,11 @@ import Services from './components/Services'
 import Team from './components/Team'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+
+//page
+import Home from './page/Home'
+import Package from './page/Package'
+import Currentjob from './page/Currentjob'
 
 function App() {
   useEffect(() => {
@@ -74,14 +80,17 @@ function App() {
       </div>
       <div id="scroll-bar"></div>
       <div id="particles-js"></div>
-      <NavBar />
-      <main>
-        <Hero />
-        <Services />
-        <Team />
-        <Contact />
-      </main>
-      <Footer />
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/package" element={<Package />} />
+          <Route path="/current" element={<Currentjob />} />
+          <Route path="/contact" element={<Contact/>} />
+          {/* เพิ่ม Route อื่นๆ ได้ที่นี่ */}
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   )
 }

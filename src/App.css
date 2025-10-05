@@ -206,7 +206,7 @@ a {
 }
 
 section {
-  min-height: calc(100vh - 80px);
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,7 +218,7 @@ section {
 
 .section-content {
   max-width: 900px;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .section-content h2 {
@@ -238,6 +238,8 @@ section {
   box-shadow: 0 0 50px rgba(213, 159, 56, 0.5);
 }
 
+/*hero compnent*/
+
 .hero h1 {
   font-size: 3.5rem;
   color: var(--primary);
@@ -248,6 +250,105 @@ section {
 .hero p {
   font-size: 1.4rem;
   opacity: 0.95;
+}
+.hero-bio {
+  text-align: left;
+  max-width: 900px;      /* จำกัดเฉพาะย่อหน้าให้แคบลงกว่าหัวเรื่อง */
+  margin: 0 auto;        /* จัดให้อยู่กลางใน section */
+  line-height: 1.8;      /* เพิ่มระยะบรรทัดให้อ่านง่าย */
+  color: #333;
+}
+
+.hero-bio h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-bio h3 {
+  color: #555;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-bio p {
+   font-size: 1.125rem; /* ขนาดปกติ */
+  line-height: 1.6;
+}
+
+.hero-bio blockquote {
+  font-style: italic;
+  color: var(--primary);
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem; /* เพิ่ม padding รอบ ๆ */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* ลดขนาด h1 */
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .hero-bio {
+    text-align: left;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .hero-bio h2 {
+    font-size: 1.7rem;
+  }
+
+  .hero-bio h3 {
+    font-size: 1.3rem;
+  }
+
+  .hero-bio p {
+    font-size: 1rem;
+  }
+
+  .hero-bio blockquote {
+    font-size: 1.05rem;
+    padding-left: 0.8rem;
+  }
+}
+
+/* Responsive สำหรับหน้าจอมือถือเล็กมาก */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-bio h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-bio h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero-bio p {
+    font-size: 0.95rem;
+  }
+
+  .hero-bio blockquote {
+    font-size: 0.95rem;
+    padding-left: 0.5rem;
+  }
 }
 
 footer {
@@ -394,6 +495,109 @@ input:checked+.slider:before {
 }
 
 
+
+
+/*servicwComponent */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(340px, 1fr)); /* กำหนดความกว้างขั้นต่ำของกล่อง */
+  gap: 2.5rem;
+  justify-content: center; /* จัดให้อยู่กลาง */
+  margin-top: 2rem;
+}
+
+.service-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(213,159,56,0.08);
+  padding: 2.5rem 2rem;
+  text-align: left;
+  transition: box-shadow 0.2s;
+  width: 100%;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 380px; /* ควบคุมขนาดให้ใกล้เคียงในภาพ */
+}
+
+
+.service-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0; /* ยกเลิก margin-bottom เดิม */
+}
+
+.service-box h3 {
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.service-box p {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* package */
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; /* ลดระยะห่าง */
+  margin: 2rem 0;
+  align-items: start; /* จัดให้รูปอยู่ระดับเดียวกัน */
+}
+
+.package-grid img {
+  width: 100%;
+  max-width: 550px; /* ปรับขนาดตามต้องการ */
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  object-fit: cover;
+  margin: 0 auto; /* จัดรูปให้อยู่ตรงกลาง column */
+  display: block;
+  margin-top: 80px;
+}
+
+/* CurrentJobComponent */
+.job-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 รูปต่อแถว */
+  gap: 1.5rem;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 800px; /* กำหนดความกว้างสูงสุดของ container */
+  margin-top: 200px;
+  text-align: center;
+}
+
+.job-grid img {
+  width: 100%;         /* กว้างเต็ม container */
+  height: 100%;       /* กำหนดความสูงรูปตามต้องการ */
+  border-radius: 12px;
+  object-fit: cover;   /* ครอบรูปเต็มพื้นที่ ไม่บิดเบี้ยว */
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  display: block;
+  margin-top: 80px;
+}
+.job h3 {
+  font-size: 3.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px #d59f38;
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+
+
 @media (max-width: 768px) {
 
   nav {
@@ -461,5 +665,17 @@ input:checked+.slider:before {
 @media (max-width: 768px) {
   
   
+}
+
+@media (max-width: 1100px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(340px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }
 

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ function NavBar() {
         </li>
       </ul>
       <ul className="nav-center">
-        <li><a href="#" className="brand">PD Marketing</a></li>
+        <li><Link to="/" className="brand">PD Marketing</Link></li>
       </ul>
 
       {/* Hamburger button */}
@@ -26,9 +27,9 @@ function NavBar() {
         ☰
       </button>
       <ul className={`nav-right ${menuOpen ? 'open' : ''}`}>
-        <li><a href="#services">บริการ</a></li>
-        <li><a href="#team">ทีมงาน</a></li>
-        <li><a href="#contact" className="cta">ติดต่อ</a></li>
+        <li><Link to="/package">แพ็คเกจ</Link></li>
+        <li><Link to="/current">ผลงาน</Link></li>
+        <li><Link to="/contact" className="cta">ติดต่อ</Link></li>
       </ul>
     </nav>
   )
