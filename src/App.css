@@ -376,6 +376,11 @@ footer {
   color: var(--text);
   pointer-events: auto;
 }
+#team {
+  width: 100%;
+  padding: 1rem 0rem; 
+  box-sizing: border-box;
+}
 
 .team-scroll-wrapper {
   overflow-x: auto;
@@ -429,13 +434,6 @@ footer {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
 }
 
-/* .team-member img {
-  width: 100%;
-  aspect-ratio: 4/5;
-  border-radius: 10px;
-  object-fit: cover;
-  margin-bottom: 0.5rem;
-} */
 @media (min-width: 769px) {
   .team-scroll {
     animation: scrollRight 40s linear infinite;
