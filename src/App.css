@@ -205,6 +205,8 @@ a {
   pointer-events: auto;
 }
 
+
+
 section {
   min-height: auto;
   display: flex;
@@ -241,6 +243,20 @@ section {
 /*hero compnent*/
 
 .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  .section-content h2 {
+    font-size: 1.8rem;
+  }
+  .section-content p {
+    font-size: 1rem;
+  }
+
+
+.hero h1 {
   font-size: 3.5rem;
   color: var(--primary);
   margin-bottom: 1rem;
@@ -266,12 +282,14 @@ section {
 }
 
 .hero-bio h3 {
-  color: #555;
+  color: #dad3d3fa;
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
 .hero-bio p {
+  color: #ddddddd7;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
    font-size: 1.125rem; /* ขนาดปกติ */
   line-height: 1.6;
 }
@@ -376,7 +394,7 @@ footer {
 
 .team-member {
   flex: 0 0 auto;
-  width: 250px;
+  width: 450px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   text-align: center;
@@ -497,7 +515,7 @@ input:checked+.slider:before {
 
 
 
-/*servicwComponent */
+/*serviceComponent */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(340px, 1fr)); /* กำหนดความกว้างขั้นต่ำของกล่อง */
@@ -519,6 +537,7 @@ input:checked+.slider:before {
   flex-direction: column;
   align-items: flex-start;
   max-width: 380px; /* ควบคุมขนาดให้ใกล้เคียงในภาพ */
+  
 }
 
 
@@ -632,19 +651,7 @@ input:checked+.slider:before {
   }
 
 
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-  .hero p {
-    font-size: 1.1rem;
-  }
-  .section-content h2 {
-    font-size: 1.8rem;
-  }
-  .section-content p {
-    font-size: 1rem;
-  }
-
+  
 
    section {
     padding: 4rem 2rem;
@@ -654,6 +661,11 @@ input:checked+.slider:before {
     width: 60%;
     margin: 1rem auto;
   }
+  .team-scroll {
+  display: flex;
+  gap: 2rem;
+  animation: scrollRight 15s linear infinite;
+}
 
   
 }
@@ -675,7 +687,29 @@ input:checked+.slider:before {
 
 @media (max-width: 768px) {
   .services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(150px, 1fr)); /* กำหนดความกว้างขั้นต่ำและให้ยืดได้ */
+    gap: 1rem; /* ลด gap ให้เหมาะกับมือถือ */
+    justify-content: center; /* จัดกึ่งกลาง */
   }
+
+  .service-box {
+    max-width: 100%; /* ไม่ให้เกิน container */
+    min-height: auto; /* ให้ความสูงปรับตามเนื้อหา */
+    padding: 1.5rem 1rem; /* ลด padding ให้เล็กลง */
+  }
+
+  .service-box p {
+    font-size: 0.475rem; /* ลดขนาดตัวอักษรสำหรับมือถือ */
+  }
+
+  .service-icon {
+    font-size: 1.2rem; /* ลดขนาดไอคอน */
+  }
+  .service-box h3 {
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  font-size: 0.475rem;
+}
+  
 }
 

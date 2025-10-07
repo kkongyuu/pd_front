@@ -33,7 +33,7 @@ function Team() {
           {teamMembers.map((member, idx) => (
             <div className="team-member" key={idx}>
               <img src={member.img} alt={member.name} />
-              <p>{member.name}</p>
+              {/* <p>{member.name}</p> */}
             </div>
           ))}
         </div>
