@@ -9,6 +9,9 @@ import package7 from '../assets/img/package/07.jpg'
 import package8 from '../assets/img/package/08.jpg'
 import package9 from '../assets/img/package/09.jpg'
 import package10 from '../assets/img/package/10.jpg'
+import package11 from '../assets/img/package/11.jpg'
+import package12 from '../assets/img/package/12.jpg'
+import package13 from '../assets/img/package/13.jpg'
 
 
 const Package = () => {
@@ -24,6 +27,9 @@ const Package = () => {
       <img src={package8} alt="แพ็คเกจ 2" />
       <img src={package9} alt="แพ็คเกจ 1" />
       <img src={package10} alt="แพ็คเกจ 2" />
+      <img src={package11} alt="แพ็คเกจ 2" />
+      <img src={package12} alt="แพ็คเกจ 2" />
+      <img src={package13} alt="แพ็คเกจ 2" />
     </div>
   )
 }
