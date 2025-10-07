@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Contact from '../components/Contact'
 import '../page/Css/ContactPage.css'
+import Logo from '../assets/img/logo/logo.png'
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({
@@ -50,6 +51,9 @@ const ContactPage = () => {
   return (
     <>
     <div className="contact-container">
+        <div className="contact-logo">
+            <img src={Logo} alt="Logo" />
+        </div>
         <h2>ติดต่อเรา</h2>
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">

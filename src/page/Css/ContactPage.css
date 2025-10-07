@@ -1,6 +1,6 @@
 .contact-container {
   max-width: 600px;
-  margin: 140px auto 0 auto; /* margin-top 140px, auto ซ้าย-ขวา */
+  margin: 80px auto 0 auto; /* margin-top 140px, auto ซ้าย-ขวา */
   padding: 2.5rem; 
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
@@ -41,6 +41,16 @@ button {
 
 button:hover {
   opacity: 0.9;
+}
+.contact-logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-logo img {
+  width: 80px; /* ปรับขนาดโลโก้ตามต้องการ */
+  height: auto;
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
