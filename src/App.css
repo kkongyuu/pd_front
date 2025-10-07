@@ -378,23 +378,36 @@ footer {
 }
 
 .team-scroll-wrapper {
-  overflow: hidden;
+  overflow-x: auto;
   width: 100%;
   margin-top: 2rem;
   position: relative;
   pointer-events: auto;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  cursor: grab;
+  user-select: none;
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  scrollbar-width: none; /* ซ่อน scrollbar บน Firefox */
+}
+
+.team-scroll-wrapper::-webkit-scrollbar {
+  display: none; /* ซ่อน scrollbar บน Chrome/Safari */
+}
+
+.team-scroll-wrapper:active {
+  cursor: grabbing;
 }
 
 .team-scroll {
   display: flex;
-  gap: 2rem;
-  animation: scrollRight 40s linear infinite;
+  gap: 1.5rem;
+  width: max-content;
+  animation: infiniteScroll 60s linear infinite; /* ✅ auto-scroll ตลอดเวลา */
 }
 
 .team-member {
-  flex: 0 0 auto;
-  width: 450px;
+  flex: 0 0 300px;
+  width: 300px;
+   max-width: 90vw; 
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   text-align: center;
@@ -416,11 +429,25 @@ footer {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
 }
 
-@keyframes scrollRight {
-  0% {
+/* .team-member img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+} */
+@media (min-width: 769px) {
+  .team-scroll {
+    animation: scrollRight 40s linear infinite;
+    animation-play-state: running;
+  }
+}
+
+@keyframes infiniteScroll {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-50%);
   }
 }
@@ -605,8 +632,8 @@ input:checked+.slider:before {
   display: block;
   margin-top: 80px;
 }
-.job h3 {
-  font-size: 3.5rem;
+.job-grid h2 {
+  font-size: 2rem;
   color: var(--primary);
   margin-bottom: 1rem;
   text-shadow: 0 0 20px #d59f38;
@@ -657,7 +684,7 @@ input:checked+.slider:before {
     padding: 4rem 2rem;
   }
 
-  .team-member {
+  /* .team-member {
     width: 60%;
     margin: 1rem auto;
   }
@@ -665,7 +692,7 @@ input:checked+.slider:before {
   display: flex;
   gap: 2rem;
   animation: scrollRight 15s linear infinite;
-}
+} */
 
   
 }

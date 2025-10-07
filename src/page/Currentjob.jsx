@@ -12,7 +12,7 @@ import job8 from '../assets/img/08.jpg'
 const Currentjob = () => {
   return (
     <div className="job-grid">
-      <h3>ผลงานที่ผ่านมาก</h3>
+      <h2>ผลงานที่ผ่านมา</h2>
       {/* <img src={job1} alt="งาน 1" /> */}
       <img src={job2} alt="งาน 2" />
       <img src={job3} alt="งาน 3" />

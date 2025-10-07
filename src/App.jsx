@@ -8,13 +8,15 @@ import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import Services from './components/Services'
 import Team from './components/Team'
-import Contact from './components/Contact'
+
 import Footer from './components/Footer'
 
 //page
 import Home from './page/Home'
 import Package from './page/Package'
 import Currentjob from './page/Currentjob'
+import Contact from './page/ContactPage'
+import ContactPage from './page/ContactPage'
 
 function App() {
   useEffect(() => {
@@ -86,7 +88,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/package" element={<Package />} />
           <Route path="/current" element={<Currentjob />} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/contact" element={<ContactPage/>} />
           {/* เพิ่ม Route อื่นๆ ได้ที่นี่ */}
         </Routes>
         <Footer />

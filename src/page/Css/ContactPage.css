@@ -1,0 +1,67 @@
+.contact-container {
+  max-width: 600px;
+  margin: 140px auto 0 auto; /* margin-top 140px, auto ซ้าย-ขวา */
+  padding: 2.5rem; 
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 215, 100, 0.15);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+button {
+  background: linear-gradient(90deg, #ffcc33, #ff9900);
+  border: none;
+  padding: 0.8rem;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 120px 1rem 0 1rem; /* margin-top น้อยลง และซ้ายขวา 1rem */
+    padding: 1.5rem;
+  }
+
+  .contact-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}
