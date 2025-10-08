@@ -7,6 +7,7 @@
   box-shadow: 0 0 30px rgba(255, 215, 100, 0.15);
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 2;
 }
 
 .contact-form {
