@@ -1,8 +1,45 @@
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/src/assets/fonts/DB Helvethaica X Bd.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'DB Helvethaica X';
+  src: url('../src/assets/fonts/DB\ Helvethaica\ X.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'DB Helvethaica X';
+  src: url('../../assets/fonts/DB Helvethaica X Li v3.2.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'DB Helvethaica X';
+  src: url('../../assets/fonts/DB Helvethaica X.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DB Helvethaica X';
+  src: url('../../assets/fonts/DB Helvethaica X Med 3 copy.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'DB Helvethaica X';
+  src: url('../../assets/fonts/DB Helvethaica X Bd.ttf') format('truetype');
+  font-weight: 700;
+}
+
 :root {
   --primary: #d59f38;
   --text: #e1c78f;
   --background-start: #0a0a0a;
   --background-end: #1a0f00;
+  --texthero: #ddddddd7
 }
 
 * {
@@ -13,7 +50,7 @@
 
 html,
 body {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'DB Helvethaica X', sans-serif;
   background: linear-gradient(160deg, var(--background-start), var(--background-end));
   color: var(--text);
   overflow-x: hidden;
@@ -24,6 +61,8 @@ body.light-mode {
   --background-end: #ffffff;
   --text: #1a1a1a;
   --primary: #e63946;
+  --texthero: #333333
+
 }
 
 body.light-mode nav {
@@ -261,11 +300,13 @@ section {
   color: var(--primary);
   margin-bottom: 1rem;
   text-shadow: 0 0 20px #d59f38;
+  
 }
 
 .hero p {
   font-size: 1.4rem;
   opacity: 0.95;
+  
 }
 .hero-bio {
   text-align: left;
@@ -273,6 +314,8 @@ section {
   margin: 0 auto;        /* จัดให้อยู่กลางใน section */
   line-height: 1.8;      /* เพิ่มระยะบรรทัดให้อ่านง่าย */
   color: #333;
+
+  
 }
 
 .hero-bio h2 {
@@ -285,13 +328,17 @@ section {
   color: #dad3d3fa;
   font-size: 1.4rem;
   margin-bottom: 1rem;
+  color: var(--primary);
+  
 }
 
 .hero-bio p {
-  color: #ddddddd7;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  color: var(--texthero);
+  /* text-shadow: 0 0 6px rgba(0, 0, 0, 0.6); */
    font-size: 1.125rem; /* ขนาดปกติ */
   line-height: 1.6;
+  
+  
 }
 
 .hero-bio blockquote {

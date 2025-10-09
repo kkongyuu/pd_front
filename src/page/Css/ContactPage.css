@@ -1,3 +1,4 @@
+
 .contact-container {
   max-width: 600px;
   margin: 80px auto 0 auto; /* margin-top 140px, auto ซ้าย-ขวา */
@@ -5,8 +6,8 @@
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(255, 215, 100, 0.15);
-  color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--texthero);
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   z-index: 2;
 }
 
