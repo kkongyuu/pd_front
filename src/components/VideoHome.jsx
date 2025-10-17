@@ -7,7 +7,7 @@ const VideoHome = () => {
 
   return (
     <div className="video-home-container">
-      <h1>video</h1>
+    
       <video
         className="video-home-iframe"
         src={pdVideo}
