@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="hero" style={{ marginTop: '100px' }}>
+    <section className="hero" >
       <h1>PD MARKETING INNOVATE</h1>
       {/* <p>#PDmarketing #DigitalMarketing</p> */}
       <div className="hero-bio-card">

@@ -1,15 +1,18 @@
 import React from 'react'
 import './Css/VideoHome.css';
+import pdVideo from '../assets/video/01.mp4';
 
 const VideoHome = () => {
   return (
     <div className="video-home-container">
-      <iframe
-        src="https://drive.google.com/file/d/1JejzRLbgZuXfzi5crG5veZ9TMRmK-XPd/preview"
-        title="Video from Google Drive"
-        allow="autoplay"
+      <video
         className="video-home-iframe"
-      ></iframe>
+        src={pdVideo}
+        controls
+        autoPlay
+        muted
+        loop
+      />
     </div>
   );
 };

@@ -1,15 +1,18 @@
 import React from 'react'
 import './Css/VideoPackage.css';
+import pdPackageVideo from '../assets/video/02.mp4';
 
 const VideoPackage = () => {
   return (
     <div className="video-package-container">
-      <iframe
-        src="https://drive.google.com/file/d/1EhxUT1vXS4Wutha18pnGNxFN3eTCrFgO/preview"
-        title="Video from Google Drive"
-        allow="autoplay"
-        className="video-package-iframe"
-      ></iframe>
+      <video
+              className="video-package-iframe"
+              src={pdPackageVideo}
+              controls
+              autoPlay
+              muted
+              loop
+            />
     </div>
   )
 }
