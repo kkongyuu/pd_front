@@ -12,10 +12,13 @@ import package10 from '../assets/img/package/10.jpg'
 import package11 from '../assets/img/package/11.jpg'
 import package12 from '../assets/img/package/12.jpg'
 import package13 from '../assets/img/package/13.jpg'
+import VideoPackage from '../components/VideoPackage'
 
 
 const Package = () => {
   return (
+    <>
+    <VideoPackage/>
     <div className="package-grid">
       <img src={package1} alt="แพ็คเกจ 1" />
       <img src={package2} alt="แพ็คเกจ 2" />
@@ -31,6 +34,8 @@ const Package = () => {
       <img src={package12} alt="แพ็คเกจ 2" />
       <img src={package13} alt="แพ็คเกจ 2" />
     </div>
+    </>
+    
   )
 }
 

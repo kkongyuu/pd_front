@@ -27,7 +27,7 @@ function NavBar() {
         ☰
       </button>
       <ul className={`nav-right ${menuOpen ? 'open' : ''}`}>
-        <li><Link to="/package">แพ็คเกจ</Link></li>
+        <li><Link to="/package">แพ็กเก็จ</Link></li>
         <li><Link to="/current">ผลงาน</Link></li>
         <li><Link to="/contact" className="cta">ติดต่อ</Link></li>
       </ul>

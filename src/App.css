@@ -308,111 +308,127 @@ section {
   opacity: 0.95;
   
 }
-.hero-bio {
-  text-align: left;
-  max-width: 900px;      /* จำกัดเฉพาะย่อหน้าให้แคบลงกว่าหัวเรื่อง */
-  margin: 0 auto;        /* จัดให้อยู่กลางใน section */
-  line-height: 1.8;      /* เพิ่มระยะบรรทัดให้อ่านง่าย */
-  color: #333;
 
-  
+
+.hero-bio-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  max-width: 900px;
+  text-align: left;
+  margin: 2rem auto;
+  position: relative;
 }
 
-.hero-bio h2 {
+/* หัวข้อหลัก */
+.hero-bio-card h2 {
+  position: relative;
   color: var(--primary);
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+  z-index: 2;
+  background-color: #fff;
+  display: inline-block;
+  padding: 0 1rem;
+  margin-left: 2rem; 
 }
 
-.hero-bio h3 {
-  color: #dad3d3fa;
+/* กรอบล้อมเนื้อหา (ต่อจากหัวข้อ) */
+.hero-bio-content {
+  position: relative;
+  padding: 2rem;
+  margin-top: -1rem; /* ดันขึ้นให้ดูต่อกับ h2 */
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+}
+
+/* เส้นครอบหัวข้อให้ดูเหมือนเป็นกรอบเดียวกัน */
+/* .hero-bio-card h2::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  bottom: -1.1rem;
+  height: 2px;
+  background: var(--primary);
+  z-index: 1;
+} */
+
+/* เนื้อหาด้านใน */
+.hero-bio-content h3 {
+  color: #333;
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  color: var(--primary);
-  
 }
 
-.hero-bio p {
-  color: var(--texthero);
-  /* text-shadow: 0 0 6px rgba(0, 0, 0, 0.6); */
-   font-size: 1.125rem; /* ขนาดปกติ */
-  line-height: 1.6;
-  
-  
+.hero-bio-content p {
+  color: #555;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
 
-.hero-bio blockquote {
+.hero-bio-content blockquote {
   font-style: italic;
   color: var(--primary);
-  border-left: 4px solid var(--primary);
+  /* border-left: 4px solid var(--primary); */
   padding-left: 1rem;
   margin: 1.5rem 0;
+  /* background: rgba(213, 159, 56, 0.05); */
+  border-radius: 6px;
 }
+
+
 
 @media (max-width: 768px) {
-  .hero {
-    padding: 2rem 1rem; /* เพิ่ม padding รอบ ๆ */
+  .hero-bio-card {
+    padding: 1.5rem;
+    margin: 1rem;
   }
 
-  .hero h1 {
-    font-size: 2.5rem; /* ลดขนาด h1 */
-    text-align: center;
+  .hero-bio-card h2 {
+    font-size: 1.6rem;
+    margin-left: 1rem; /* ลดระยะซ้ายลงบนมือถือ */
+    padding: 0 0.5rem;
   }
 
-  .hero p {
-    font-size: 1.1rem;
-    text-align: center;
+  .hero-bio-content {
+    padding: 1.5rem;
   }
 
-  .hero-bio {
-    text-align: left;
-    padding: 0 1rem;
-    max-width: 100%;
-  }
-
-  .hero-bio h2 {
-    font-size: 1.7rem;
-  }
-
-  .hero-bio h3 {
-    font-size: 1.3rem;
-  }
-
-  .hero-bio p {
-    font-size: 1rem;
-  }
-
-  .hero-bio blockquote {
-    font-size: 1.05rem;
-    padding-left: 0.8rem;
-  }
-}
-
-/* Responsive สำหรับหน้าจอมือถือเล็กมาก */
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .hero-bio h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero-bio h3 {
+  .hero-bio-content h3 {
     font-size: 1.2rem;
   }
 
-  .hero-bio p {
-    font-size: 0.95rem;
+  .hero-bio-content p {
+    font-size: 1rem;
+  }
+  .hero-bio-content blockquote {
+  font-size: 7.6px;
+  
+}
+}
+
+@media (max-width: 480px) {
+  .hero-bio-card {
+    padding: 1rem;
+    margin: 0.5rem;
   }
 
-  .hero-bio blockquote {
-    font-size: 0.95rem;
-    padding-left: 0.5rem;
+  .hero-bio-card h2 {
+    font-size: 1.4rem;
+    margin-left: 0.8rem;
+    padding: 0 0.4rem;
+  }
+
+  .hero-bio-content {
+    padding: 1rem;
+  }
+
+  .hero-bio-content p {
+    font-size: 7.6px;
   }
 }
 
