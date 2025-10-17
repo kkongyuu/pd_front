@@ -12,6 +12,7 @@ const VideoHome = () => {
         autoPlay
         muted
         loop
+        playsInline
       />
     </div>
   );

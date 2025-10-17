@@ -12,6 +12,7 @@ const VideoPackage = () => {
               autoPlay
               muted
               loop
+              playsInline
             />
     </div>
   )
