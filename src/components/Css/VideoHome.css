@@ -21,7 +21,14 @@
 @media screen and (max-width: 480px) {
   .video-home-container {
     max-width: 100%; /* ให้เต็มความกว้างมือถือ */
-    padding-bottom: 100%; /* อัตราส่วน 16:9 */
+    padding-bottom: 140%; /* อัตราส่วน 16:9 */
     margin: 1rem auto; /* ลด margin บน-ล่าง */
+  }
+}
+@media screen and (max-width: 768px) {
+  .video-home-container {
+    max-width: 100%; /* ให้เต็มความกว้างมือถือ */
+    padding-bottom: 140%; /* อัตราส่วน 16:9 */
+    margin: 1rem auto; 
   }
 }

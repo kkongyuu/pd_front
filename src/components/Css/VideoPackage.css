@@ -29,7 +29,7 @@
 @media (max-width: 768px) {
   .video-package-container {
    max-width: 100%; /* ให้เต็มความกว้างมือถือ */
-    padding-bottom: 100%; /* อัตราส่วน 16:9 */
+    padding-bottom: 140%; /* อัตราส่วน 16:9 */
     margin: 1rem auto; /* ลด margin บน-ล่าง */
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.15);
@@ -39,7 +39,7 @@
 @media (max-width: 480px) {
   .video-package-container {
     max-width: 100%; /* ให้เต็มความกว้างมือถือ */
-    padding-bottom: 100%; /* อัตราส่วน 16:9 */
+    padding-bottom: 140%; /* อัตราส่วน 16:9 */
     margin: 1rem auto; /* ลด margin บน-ล่าง */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.12);
