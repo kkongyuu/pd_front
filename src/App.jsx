@@ -1,31 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { useEffect } from 'react'
-import './App.css'
-import NavBar from './components/NavBar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import Team from './components/Team'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import "./App.css";
+import NavBar from "./components/NavBar";
+import NavBarbottom from "./components/Navbarbottom";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import Team from "./components/Team";
 
-import Footer from './components/Footer'
+import Footer from "./components/Footer";
 
 //page
-import Home from './page/Home'
-import Package from './page/Package'
-import Currentjob from './page/Currentjob'
-import Contact from './page/ContactPage'
-import ContactPage from './page/ContactPage'
+import Home from "./page/Home";
+import Package from "./page/Package";
+import Currentjob from "./page/Currentjob";
+import Contact from "./page/ContactPage";
+import ContactPage from "./page/ContactPage";
 
 function App() {
   useEffect(() => {
     // โหลด particles.js
-    const script = document.createElement('script')
-    script.src = 'https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js";
     script.onload = () => {
       if (window.particlesJS) {
-        window.particlesJS('particles-js', {
+        window.particlesJS("particles-js", {
           particles: {
             number: { value: 120 },
             color: { value: "#ffcc66" },
@@ -37,42 +39,42 @@ function App() {
               distance: 130,
               color: "#ffcc66",
               opacity: 0.3,
-              width: 1
+              width: 1,
             },
             move: {
               enable: true,
               speed: 2,
               random: true,
-              out_mode: "bounce"
-            }
+              out_mode: "bounce",
+            },
           },
           interactivity: {
             detect_on: "canvas",
             events: {
               onhover: { enable: true, mode: "grab" },
               onclick: { enable: true, mode: "push" },
-              resize: true
+              resize: true,
             },
             modes: {
               grab: {
                 distance: 140,
-                line_linked: { opacity: 0.5 }
+                line_linked: { opacity: 0.5 },
               },
-              push: { particles_nb: 4 }
-            }
+              push: { particles_nb: 4 },
+            },
           },
-          retina_detect: true
-        })
+          retina_detect: true,
+        });
       }
       // ซ่อน loading overlay
-      const overlay = document.getElementById('loading-overlay')
-      if (overlay) overlay.classList.add('hidden')
-    }
-    document.body.appendChild(script)
+      const overlay = document.getElementById("loading-overlay");
+      if (overlay) overlay.classList.add("hidden");
+    };
+    document.body.appendChild(script);
     return () => {
-      document.body.removeChild(script)
-    }
-  }, [])
+      document.body.removeChild(script);
+    };
+  }, []);
 
   // ...rest of code...
   return (
@@ -83,18 +85,21 @@ function App() {
       <div id="scroll-bar"></div>
       <div id="particles-js"></div>
       <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/package" element={<Package />} />
-          <Route path="/current" element={<Currentjob />} />
-          <Route path="/contact" element={<ContactPage/>} />
-          {/* เพิ่ม Route อื่นๆ ได้ที่นี่ */}
-        </Routes>
-        <Footer />
+        <div className="app-wrapper">
+          <NavBar />
+          <div className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/package" element={<Package />} />
+              <Route path="/current" element={<Currentjob />} />
+              <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
