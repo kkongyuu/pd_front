@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Orbitron';
-  src: url('./src/assets/fonts/DB_Helvethaica X Bd.ttf') format('truetype');
+  src: url('./assets/fonts/DB_Helvethaica X Bd.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'DB Helvethaica X';
-  src: url('./src/assets/fonts/DB_Helvethaica_X.ttf') format('truetype');
+  src: url('./assets/fonts/DB_Helvethaica_X.ttf') format('truetype');
   font-weight: 700;
 }
 
