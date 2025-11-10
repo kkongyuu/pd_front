@@ -71,12 +71,16 @@
 
 .service-title {
   font-size: 1.5rem;
-  color: #ecab30;
+  color: #ac732a;
   text-align: center;
   min-height: 80px;
   display: flex;
-  justify-content: center;
+   flex-direction: column; /* เรียงบนล่าง */
+  justify-content: center; /* จัดกึ่งกลางแนวตั้ง */
+  align-items: center;     /* จัดกึ่งกลางแนวนอน */
 }
+
+
 
 /* ==== Slider Buttons ==== */
 .slider-btn {
@@ -133,3 +137,4 @@
     min-height: 70px;
   }
 }
+

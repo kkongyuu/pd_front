@@ -14,7 +14,10 @@ import crm from "../assets/img/service/customer_service.png";
 const services = [
   { img: marketing, text: "การตลาดออนไลน์ (Digital Marketing Strategy)" },
   { img: online, text: "โฆษณาออนไลน์ (Online Advertising)" },
-  { img: graphic, text: "กราฟิกและออกแบบสื่อ (Graphic Design & Creative Content)" },
+  {
+    img: graphic,
+    text: "กราฟิกและออกแบบสื่อ (Graphic Design & Creative Content)",
+  },
   { img: content, text: "Content Marketing" },
   { img: social, text: "Social Media Marketing" },
   { img: seo, text: "SEO" },
@@ -69,18 +72,30 @@ function Services() {
             className="slider-images"
             style={{
               transform: `translateX(-${slideIndex * (100 / visibleCount)}%)`,
-              transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
+              transition: isTransitioning
+                ? "transform 0.7s ease-in-out"
+                : "none",
             }}
             onTransitionEnd={handleTransitionEnd}
           >
-            {extendedServices.map((service, idx) => (
-              <div key={idx} className="slide-item">
-                <div className="service-card">
-                  <img src={service.img} alt={service.text} />
-                  <h3 className="service-title">{service.text}</h3>
+            {extendedServices.map((service, idx) => {
+              // แยกข้อความไทยและอังกฤษ
+              const match = service.text.match(/^(.*?)\s*\((.*?)\)$/);
+              const thaiText = match ? match[1] : service.text;
+              const engText = match ? match[2] : "";
+
+              return (
+                <div key={idx} className="slide-item">
+                  <div className="service-card">
+                    <img src={service.img} alt={service.text} />
+                    <div className="service-title">
+                      <div className="thai-text">{thaiText}</div>
+                      {engText && <div className="eng-text">{engText}</div>}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
