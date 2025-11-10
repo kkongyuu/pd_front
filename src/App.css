@@ -1,34 +1,39 @@
 @font-face {
   font-family: 'Orbitron';
-  src: url('./src/assets/fonts/DB Helvethaica X Bd.ttf') format('truetype');
+  src: url('./src/assets/fonts/DB_Helvethaica X Bd.ttf') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'DB Helvethaica X';
-  src: url('./src/assets/fonts/DB\ Helvethaica\ X.ttf') format('truetype');
+  src: url('./src/assets/fonts/DB_Helvethaica_X.ttf') format('truetype');
   font-weight: 700;
 }
 
 /* @font-face {
   font-family: 'DB Helvethaica X';
-  src: url('../../assets/fonts/DB Helvethaica X Li v3.2.ttf') format('truetype');
+  src: url('./assets/fonts/DB_Helvethaica_X_Li_v3.2.ttf') format('truetype');
   font-weight: 300;
 } */
 
 @font-face {
   font-family: 'DB Helvethaica X';
-  src: url('./assets/fonts/DB Helvethaica X.ttf') format('truetype');
+  src: url('./assets/fonts/DB_Helvethaica_X.ttf') format('truetype');
   font-weight: 400;
 }
 
-
+/* @font-face {
+  font-family: 'DB Helvethaica X';
+  src: url('../../assets/fonts/DB_Helvethaica_X_Med 3 copy.ttf') format('truetype');
+  font-weight: 500;
+} */
 
 /* @font-face {
   font-family: 'DB Helvethaica X';
-  src: url('../../assets/fonts/DB Helvethaica X Bd.ttf') format('truetype');
+  src: url('./assets/fonts/DB_Helvethaica_X_Bd.ttf') format('truetype');
   font-weight: 700;
 } */
+
 
 
 :root {
@@ -639,7 +644,6 @@ input:checked+.slider:before {
   flex-direction: column;
   align-items: flex-start;
   max-width: 380px; /* ควบคุมขนาดให้ใกล้เคียงในภาพ */
-  
 }
 
 
@@ -972,6 +976,45 @@ input:checked+.slider:before {
   font-weight: 400;
 }
 
+/* ==== slider img ==== */
 
+/* .services-slider {
+  position: relative;
+  width: 700px;
+  overflow: hidden; 
+  margin: 0 auto;
+}
 
+.slider-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out; 
+}
 
+.slider-images img {
+  width: auto;
+  height: px;
+  object-fit: contain;
+  flex-shrink: 0; 
+  margin-right: 10px;
+}
+
+.services-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.services-slider button.prev {
+  left: 0;
+}
+
+.services-slider button.next {
+  right: 0;
+} */
