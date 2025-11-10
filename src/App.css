@@ -1,38 +1,49 @@
 @font-face {
   font-family: 'Orbitron';
-  src: url('/src/assets/fonts/DB Helvethaica X Bd.ttf') format('truetype');
+  src: url('./assets/fonts/DB Helvethaica X Bd.ttf') format('truetype');
   font-weight: normal;
 }
 
-@font-face {
-  font-family: 'DB Helvethaica X';
-  src: url('../src/assets/fonts/DB Helvethaica X.ttf') format('truetype');
-  font-weight: 700;
-}
+/* DB Helvethaica X Bd.ttf */
+
 
 @font-face {
   font-family: 'DB Helvethaica X';
-  src: url('../../assets/fonts/DB Helvethaica X Li v3.2.ttf') format('truetype');
+  src: url('./assets/fonts/DB Helvethaica X.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* DB Helvethaica X.ttf */
+
+@font-face {
+  font-family: 'DB Helvethaica X';
+  src: url('./assets/fonts/DB Helvethaica X Li v3.2.ttf') format('truetype');
   font-weight: 300;
 }
 
+/* DB Helvethaica X Li v3.2.ttf */
+
 @font-face {
   font-family: 'DB Helvethaica X';
-  src: url('../../assets/fonts/DB Helvethaica X.ttf') format('truetype');
+  src: url('./assets/fonts/DB Helvethaica X.ttf') format('truetype');
   font-weight: 400;
 }
+/* DB Helvethaica X.ttf */
+
 
 @font-face {
   font-family: 'DB Helvethaica X';
-  src: url('../../assets/fonts/DB Helvethaica X Med 3 copy.ttf') format('truetype');
+  src: url('./assets/fonts/DB Helvethaica X Med 3 copy.ttf') format('truetype');
   font-weight: 500;
 }
+/* DB Helvethaica X Med 3 copy.ttf */
 
 @font-face {
   font-family: 'DB Helvethaica X';
-  src: url('../../assets/fonts/DB Helvethaica X Bd.ttf') format('truetype');
+  src: url('./assets/fonts/DB Helvethaica X Bd.ttf') format('truetype');
   font-weight: 700;
 }
+/* DB Helvethaica X Bd.ttf */
 
 :root {
   --primary: #d59f38;
