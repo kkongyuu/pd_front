@@ -971,12 +971,19 @@ input:checked+.slider:before {
 
 
 .containner-league {
-  border: 2px solid var(--primary);
-  padding: 3px;
+  border: 1.5px solid var(--primary);
+  padding: 2px 3px; /* ลด padding ให้กระชับ */
   display: flex;
-  flex-direction: row;
-  border-radius: 8px;
-  /* background-color: #b9b8b8; */
+  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  border-radius: 6px;
+  height: 32px; /* เท่ากับขนาดของ FaLine */
+}
+
+.containner-league h3 {
+  font-size: 15px; /* ลดขนาดตัวอักษร */
+  margin: 0; /* เอาช่องว่างเริ่มต้นของ h3 ออก */
+  line-height: 1;
+  font-weight: 400;
 }
 
 

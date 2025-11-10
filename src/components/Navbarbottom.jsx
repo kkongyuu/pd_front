@@ -18,7 +18,7 @@ function NavBarbottom() {
       <ul>
         <li>
           <Link to="/" className="brand">
-            PD Marketing
+            PD Marketing Innovate
           </Link>
         </li>
       </ul>

@@ -28,9 +28,11 @@ function NavBarTop() {
         </li>
       </ul>
 
-      <ul >
+      <ul>
         <li>
-          <h2>Tel: 0989232424</h2>
+          <p style={{ fontSize: "25px", fontWeight: "400" }}>
+            Tel: 098-923-2424
+          </p>
         </li>
         <a
           href="https://lin.ee/WSgSvsl"
@@ -38,7 +40,7 @@ function NavBarTop() {
           rel="noopener noreferrer"
           style={{ border: "none", textDecoration: "none" }}
         >
-          <FaLine size={24} />
+          <FaLine size={30} />
         </a>
         <div className="containner-league">
           <h3
