@@ -1,59 +1,96 @@
+import { useState } from "react";
+import "./Css/slider.css";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
+import marketing from "../assets/img/service/marketing.png";
+import online from "../assets/img/service/online.png";
+import graphic from "../assets/img/service/Graphic_Design.png";
+import content from "../assets/img/service/content.jpg";
+import social from "../assets/img/service/social.jpg";
+import seo from "../assets/img/service/seo.jpg";
+import website from "../assets/img/service/website.jpg";
+import crm from "../assets/img/service/customer_service.png";
+
 const services = [
-  {
-    icon: "🤝",
-    title: "CRM",
-    desc: "ระบบบริหารจัดการความสัมพันธ์ลูกค้า ช่วยเก็บข้อมูล ติดตามการขาย ทำการตลาด และบริการหลังการขาย เพื่อสร้างความพึงพอใจและเพิ่มยอดขายให้ธุรกิจอย่างมีประสิทธิภาพ "
-  },
-  {
-    icon: "🧑‍💼",
-    title: "Synergy",
-    desc: "ให้คำปรึกษาด้านการตลาดแบบมืออาชีพ ช่วยวางกลยุทธ์ วางแผนการตลาด และเพิ่มโอกาสการขายให้ธุรกิจของคุณ สร้างผลลัพธ์ที่ชัดเจนและยั่งยืนในทุกแคมเปญ"
-  },
-  {
-    icon: "💻",
-    title: "Website",
-    desc: "ออกแบบและพัฒนาเว็บไซต์ที่สวยงาม ใช้งานง่าย รองรับทุกอุปกรณ์ ช่วยสร้างภาพลักษณ์ที่น่าเชื่อถือและดึงดูดลูกค้า พร้อมปรับแต่งให้ตรงตามความต้องการของธุรกิจคุณ "
-  },
-  {
-    icon: "🎬",
-    title: "Video Production",
-    desc: "บริการผลิตภาพนิ่ง และ VDO Content เต็มรูปแบบโดยทีมงานมืออาชีพ ตั้งแต่เริ่มต้นจนจบครบทุกกระบวนการ Create ผลงานหลากหลายแนว หลากหลายสไตล์ เพื่อให้ผลงาน และบริการของคุณเข้าถึงกลุ่มเป้าหมายได้อย่างชัดเจน และสื่อสารเรื่องราวสู่อินไซต์ที่แท้จริงของจุด"
-  },
-  {
-    icon: "🌱",
-    title: "Seeding Marketing",
-    desc: "บริการ Seeding Marketing ช่วยสร้างการรับรู้และความน่าเชื่อถือบนโลกออนไลน์ วางข้อความเชิงบวกลงบนแพลตฟอร์มที่เหมาะสม เพื่อให้แบรนด์ของคุณเข้าถึงกลุ่มเป้าหมาย "
-  },
-  {
-    icon: "🔍",
-    title: "SEO",
-    desc: "บริการ SEO ช่วยให้เว็บไซต์ของคุณติดอันดับการค้นหาบน Google เพิ่มการเข้าถึงกลุ่มเป้าหมาย สร้างทราฟฟิกคุณภาพ และต่อยอดเป็นโอกาสในการขายอย่างยั่งยืน "
-  },
-  
-]
+  { img: marketing, text: "การตลาดออนไลน์ (Digital Marketing Strategy)" },
+  { img: online, text: "โฆษณาออนไลน์ (Online Advertising)" },
+  { img: graphic, text: "กราฟิกและออกแบบสื่อ (Graphic Design & Creative Content)" },
+  { img: content, text: "Content Marketing" },
+  { img: social, text: "Social Media Marketing" },
+  { img: seo, text: "SEO" },
+  { img: website, text: "Website" },
+  { img: crm, text: "ระบบบริหารลูกค้า (CRM System)" },
+];
 
 function Services() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const visibleCount = 3;
+
+  // สร้าง array ที่มีการทำซ้ำเพื่อให้เกิด infinite loop effect
+  const extendedServices = [...services, ...services, ...services];
+  const startIndex = services.length; // เริ่มที่ชุดกลาง
+
+  const [slideIndex, setSlideIndex] = useState(startIndex);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+
+  const prevSlide = () => {
+    setIsTransitioning(true);
+    setSlideIndex((prev) => prev - 1);
+  };
+
+  const nextSlide = () => {
+    setIsTransitioning(true);
+    setSlideIndex((prev) => prev + 1);
+  };
+
+  // จัดการการวนกลับเมื่อถึงจุดสุดท้าย
+  const handleTransitionEnd = () => {
+    if (slideIndex >= startIndex + services.length) {
+      setIsTransitioning(false);
+      setSlideIndex(startIndex);
+    } else if (slideIndex < startIndex) {
+      setIsTransitioning(false);
+      setSlideIndex(startIndex + services.length - 1);
+    }
+  };
+
   return (
-    <section id="services" className="services">
-      <div className="section-content">
-        <h2>บริการของเรา</h2>
-        <div className="services-grid">
-          {services.map((item, idx) => (
-            <div className="service-box" key={idx}>
-              <div className="service-title">
-                <span className="service-icon">{item.icon}</span>
-                <h3>{item.title}</h3>
+    <section className="services-section">
+      <h2>บริการของเรา</h2>
+      <div className="services-slider">
+        {/* Previous Button */}
+        <button onClick={prevSlide} className="slider-btn prev">
+          <FaArrowLeft size={20} color="var(--text)" />
+        </button>
+
+        {/* Slider Container */}
+        <div className="slider-container">
+          <div
+            className="slider-images"
+            style={{
+              transform: `translateX(-${slideIndex * (100 / visibleCount)}%)`,
+              transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
+            }}
+            onTransitionEnd={handleTransitionEnd}
+          >
+            {extendedServices.map((service, idx) => (
+              <div key={idx} className="slide-item">
+                <div className="service-card">
+                  <img src={service.img} alt={service.text} />
+                  <h3 className="service-title">{service.text}</h3>
+                </div>
               </div>
-              <p>{item.desc}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
+        {/* Next Button */}
+        <button onClick={nextSlide} className="slider-btn next">
+          <FaArrowRight size={20} color="var(--text)" />
+        </button>
       </div>
-      {/* <div className="section-image">
-        <img src="https://pdmarketinginnovate.com/wp-content/uploads/2022/10/s__14139398.jpg?strip=info&w=800"
-          alt="บริการ" />
-      </div> */}
     </section>
-  )
+  );
 }
-export default Services
+
+export default Services;

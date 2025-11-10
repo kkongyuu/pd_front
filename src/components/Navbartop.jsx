@@ -30,7 +30,7 @@ function NavBarTop() {
 
       <ul>
         <li>
-          <p style={{ fontSize: "25px", fontWeight: "400" }}>
+          <p style={{ fontSize: "20px", fontWeight: "400" }}>
             Tel: 098-923-2424
           </p>
         </li>
@@ -78,39 +78,3 @@ function NavBarTop() {
 
 export default NavBarTop;
 
-{
-  /* <ul className={`nav-right ${menuOpen ? "open" : ""}`}>
-        <li>
-          <Link to="/package">แพ็กเก็จ</Link>
-        </li>
-        <li>
-          <Link to="/current">ผลงาน</Link>
-        </li>
-        <li>
-          <Link to="/contact" className="cta">
-            ติดต่อ
-          </Link>
-        </li>
-      </ul> */
-}
-
-{
-  /* <ul className="nav-center">
-        <li>
-          <Link to="/" className="brand">
-            PD Marketing
-          </Link>
-        </li>
-      </ul> */
-}
-
-{
-  /* Hamburger button */
-}
-{
-  /* <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        ☰
-      </button> */
-}
-
-// const [menuOpen, setMenuOpen] = useState(false);
