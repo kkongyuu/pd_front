@@ -30,7 +30,7 @@ function NavBarTop() {
 
       <ul>
         <li>
-          <p style={{ fontSize: "25px", fontWeight: "400" }}>
+          <p style={{ fontSize: "18px", fontWeight: "400" }}>
             Tel: 098-923-2424
           </p>
         </li>
