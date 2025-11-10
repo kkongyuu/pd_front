@@ -49,7 +49,7 @@ function NavBarTop() {
               borderRadius: "5px",
               backgroundColor:
                 language === "TH" ? "var(--primary)" : "transparent",
-              color: language === "TH" ? "#fff" : "#000",
+            //   color: language === "TH" ? "#fff" : "#000",
             }}
           >
             ไทย
