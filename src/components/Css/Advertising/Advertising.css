@@ -24,7 +24,7 @@
     font-size: 3.5rem;
     color: var(--primary);
     /* margin-bottom: 1rem; */
-    text-shadow: 0 0 20px #d59f38;
+    text-shadow: 0 0 20px #d59f38; 
 }
 
 .containner h3 {
@@ -35,7 +35,7 @@
 }
 
 .containner-text {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     padding: 10px;
 }
@@ -55,11 +55,23 @@
   text-align: justify;     /* จัดย่อหน้าเต็มบรรทัด */
 }
 
-/* .containner-text-subtitle {
-   margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-} */
+
+.dot-Text {
+  position: relative;
+  font-size: 1.4rem;
+  opacity: 0.95;
+  line-height: 1.8;
+  text-align: justify;
+  padding-left: 20px; /* เว้นช่องไว้สำหรับจุด */
+}
+
+.dot-Text::before {
+  content: "•"; /* จุดนำหน้า */
+  position: absolute;
+  left: 0;
+  color: var(--primary); /* หรือเปลี่ยนสีได้ */
+  font-weight: bold;
+}
 
 .containner-text-subtitle p {
   font-size: 1.4rem;

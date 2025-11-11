@@ -18,7 +18,11 @@ const services = [
     text: "การตลาดออนไลน์ (Digital Marketing Strategy)",
     Link: "/marketing",
   },
-  { img: online, text: "โฆษณาออนไลน์ (Online Advertising)", Link: "" },
+  {
+    img: online,
+    text: "โฆษณาออนไลน์ (Online Advertising)",
+    Link: "/advertising",
+  },
   {
     img: graphic,
     text: "กราฟิกและออกแบบสื่อ (Graphic Design & Creative Content)",
