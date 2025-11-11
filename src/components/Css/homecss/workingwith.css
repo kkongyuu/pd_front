@@ -1,0 +1,102 @@
+.homeworking-container {
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  height: 650px;
+  width: auto;
+  margin-bottom: 100px;
+}
+
+.homeworking-container h2 {
+  font-size: 3.5rem;
+  color: var(--primary);
+  text-align: center;
+  text-shadow: 0 0 20px #d59f38;
+  margin-bottom: 20px;
+}
+
+.homeworking-content {
+  height: 600px;
+  width: auto;
+  padding: 20px 40px 20px 40px;
+  border: 2px solid var(--primary);
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.homeworking-slider {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  pointer-events: none; /* ปิดการตอบสนองกับ mouse */
+}
+
+.slider-track {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Animation สำหรับเลื่อนขึ้น */
+.slider-track.scroll-up {
+  animation: scrollUp 40s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+/* Animation สำหรับเลื่อนลง */
+.slider-track.scroll-down {
+  animation: scrollDown 40s linear infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.slider-track img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .homeworking-container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeworking-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: auto;
+  }
+  
+  .homeworking-container h2 {
+    font-size: 2rem;
+  }
+  
+  .homeworking-content {
+    height: 400px;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+}

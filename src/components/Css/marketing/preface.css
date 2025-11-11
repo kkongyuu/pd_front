@@ -5,14 +5,14 @@
     padding: 6rem 2rem;
 }
 
-.containner {
+.Marketing-containner {
     margin-top: 90px;
     align-items: start;
     padding-left: 20%;
     padding-right: 20%;
 }
 
-.containner h1 {
+.Marketing-containner h1 {
     font-size: 4.5rem;
     color: var(--primary);
     /* margin-bottom: 1rem; */
@@ -20,34 +20,34 @@
     
 }
 
-.containner h2 {
+.Marketing-containner h2 {
     font-size: 3.5rem;
     color: var(--primary);
     /* margin-bottom: 1rem; */
     text-shadow: 0 0 20px #d59f38;
 }
 
-.containner h3 {
+.Marketing-containner h3 {
     font-size: 2rem;
     color: var(--primary);
     text-align: start;
     text-shadow: 0 0 20px #d59f38; 
 }
 
-.containner-text {
+.Marketing-containner-text {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
 }
 
-.preface-text {
+.Marketing-preface-text {
   font-size: 1.4rem;
   opacity: 0.95;
   line-height: 1.8;       /* เพิ่มระยะบรรทัดให้อ่านง่าย */
   text-align: justify;     /* จัดย่อหน้าเต็มบรรทัด */
 }
 
-.preface-text-frist {
+.Marketing-preface-text-frist {
   font-size: 1.4rem;
   opacity: 0.95;
   text-indent: 20px;
@@ -61,14 +61,14 @@
     padding: 10px;
 } */
 
-.containner-text-subtitle p {
+.Marketing-containner-text-subtitle p {
   font-size: 1.4rem;
   opacity: 0.95;
   line-height: 1.8;      
   text-align: justify;    
 }
 
-.preface-text-subtitle {
+.Marketing-preface-text-subtitle {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 1.4rem;
@@ -77,7 +77,7 @@
   text-align: justify;     
 }
 
-.question-containner {
+.Marketing-question-containner {
   margin-bottom: 1px;
   margin-top: 1px;
 }
@@ -92,7 +92,7 @@
 
 /* ====== css button ======  */
 /* Container ปุ่ม จัดเรียงแนวนอน */
-.container-button {
+.Marketing-container-button {
   display: flex;
   gap: 20px; /* ระยะห่างระหว่างปุ่ม */
   justify-content: center; /* จัดกลาง container */
@@ -100,7 +100,7 @@
 }
 
 /* Style ปุ่มพื้นฐาน */
-.btn {
+.Marketing-btn {
   padding: 12px 24px;
   font-size: 1.2rem;
   font-weight: bold;
@@ -111,24 +111,24 @@
 }
 
 /* ปุ่ม "นัดหมายพูดคุยฟรี" */
-.btn-appointment {
+.Marketing-btn-appointment {
   /* background-color: #d94f87; dark pink / theme ของคุณ/ */
   color: #fff;
 }
 
-.btn-appointment:hover {
+.Marketing-btn-appointment:hover {
   /* background-color: #ff70a0; */
   transform: scale(1.05);
 }
 
 /* ปุ่ม "ขอใบเสนอราคา" */
-.btn-quote {
+.Marketing-btn-quote {
   background-color: #fff;
   /* color: #d94f87; */
   /* border: 2px solid #d94f87; */
 }
 
-.btn-quote:hover {
+.Marketing-btn-quote:hover {
   /* background-color: #d94f87; */
   color: #fff;
   transform: scale(1.05);

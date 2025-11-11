@@ -2,12 +2,12 @@ import "../Css/Advertising/Advertising.css";
 
 function Advertising() {
   return (
-    <section className="containner">
+    <section className="Advertising-containner">
       <h1>โฆษณาออนไลน์</h1>
       <h1>Online Advertising</h1>
       {/* <div className="divider"> </div> */}
-      <div className="containner-text">
-        <div className="preface-text-frist">
+      <div className="Advertising-containner-text">
+        <div className="Advertising-preface-text-frist">
           {
             "บริหารงบโฆษณาอย่างมีประสิทธิภาพ เพื่อผลลัพธ์ทางธุรกิจที่วัดได้จริง ในยุคดิจิทัลที่การแข่งขันสูงขึ้นทุกวัน “โฆษณาออนไลน์” คือเครื่องมือสำคัญที่ช่วยให้แบรนด์เข้าถึงกลุ่มเป้าหมายได้อย่างแม่นยำ PD Marketing ให้บริการบริหารและวางแผนแคมเปญโฆษณาอย่างมืออาชีพ โดยอิงจากข้อมูลเชิงลึกเพื่อให้ทุกงบประมาณที่ใช้สร้างผลลัพธ์ได้สูงสุด ทั้งยอดขาย การจดจำแบรนด์ และความสัมพันธ์กับลูกค้าในระยะยาว"
           }
@@ -15,58 +15,68 @@ function Advertising() {
       </div>
 
       <h2>บริการภายใต้หมวด “โฆษณาออนไลน์ (Online Advertising)”</h2>
-      <div className="containner-text">
+      <div className="Advertising-containner-text">
         <h3> Facebook & Instagram Ads</h3>
-        <div className="preface-text-subtitle">
-          <div className="dot-Text">
+        <div className="Advertising-preface-text-subtitle">
+          <div className="Advertising-dot-Text">
             วางแผนและออกแบบแคมเปญให้เข้าถึงกลุ่มเป้าหมายอย่างมีประสิทธิภาพ
           </div>
-          <div className="dot-Text">
+          <div className="Advertising-dot-Text">
             เลือกกลุ่มเป้าหมายที่เหมาะสม (Targeting)
           </div>
-          <div className="dot-Text"> ออกแบบคอนเทนต์และภาพโฆษณา</div>
-          <div className="dot-Text"> วัดผลและปรับปรุงอย่างต่อเนื่อง</div>
+          <div className="Advertising-dot-Text"> ออกแบบคอนเทนต์และภาพโฆษณา</div>
+          <div className="Advertising-dot-Text">
+            {" "}
+            วัดผลและปรับปรุงอย่างต่อเนื่อง
+          </div>
         </div>
 
         <h3> Google Ads (Search, Display, YouTube)</h3>
-        <div className="preface-text-subtitle">
-          <div className="dot-Text">
+        <div className="Advertising-preface-text-subtitle">
+          <div className="Advertising-dot-Text">
             วิเคราะห์คีย์เวิร์ด วางแผนแคมเปญ และบริหารงบอย่างรอบคอบ
           </div>
-          <div className="dot-Text">Search Ads, Display Ads, YouTube Ads</div>
-          <div className="dot-Text"> Conversion Tracking และรายงานผลลัพธ์</div>
+          <div className="Advertising-dot-Text">
+            Search Ads, Display Ads, YouTube Ads
+          </div>
+          <div className="Advertising-dot-Text">
+            {" "}
+            Conversion Tracking และรายงานผลลัพธ์
+          </div>
         </div>
 
         <h3> TikTok & Video Ads</h3>
-        <div className="preface-text-subtitle">
-          <div className="dot-Text">
+        <div className="Advertising-preface-text-subtitle">
+          <div className="Advertising-dot-Text">
             วางคอนเซปต์วิดีโอและออกแบบโฆษณาให้เหมาะกับแพลตฟอร์ม
           </div>
-          <div className="dot-Text">
+          <div className="Advertising-dot-Text">
             สร้างการรับรู้ (Awareness) และ Engagement ผ่านคอนเทนต์วิดีโอ
           </div>
         </div>
 
         <h3> Retargeting & Remarketing Campaigns</h3>
-        <div className="preface-text-subtitle">
-          <div className="dot-Text">
+        <div className="Advertising-preface-text-subtitle">
+          <div className="Advertising-dot-Text">
             สื่อสารซ้ำกับลูกค้าที่เคยมีปฏิสัมพันธ์กับแบรนด์
           </div>
-          <div className="dot-Text">
+          <div className="Advertising-dot-Text">
             ออกแบบข้อความเฉพาะบุคคล (Personalized Message)
           </div>
-          <div className="dot-Text">
+          <div className="Advertising-dot-Text">
             เพิ่ม Conversion โดยไม่ต้องเพิ่มงบโฆษณา
           </div>
         </div>
 
         <h3> Performance Optimization & Reporting</h3>
-        <div className="preface-text-subtitle">
-          <div className="dot-Text">
+        <div className="Advertising-preface-text-subtitle">
+          <div className="Advertising-dot-Text">
             ติดตามและวิเคราะห์ข้อมูลโฆษณาอย่างต่อเนื่อง
           </div>
-          <div className="dot-Text">รายงานผลลัพธ์พร้อมคำแนะนำเชิงกลยุทธ์</div>
-          <div className="dot-Text">
+          <div className="Advertising-dot-Text">
+            รายงานผลลัพธ์พร้อมคำแนะนำเชิงกลยุทธ์
+          </div>
+          <div className="Advertising-dot-Text">
             {" "}
             ปรับแคมเปญให้มีประสิทธิภาพยิ่งขึ้นจากข้อมูลจริง
           </div>
@@ -74,8 +84,8 @@ function Advertising() {
       </div>
 
       <h2>กระบวนการทำงานของ PD Marketing</h2>
-      <div className="containner-text">
-        <div className="preface-text-subtitle">
+      <div className="Advertising-containner-text">
+        <div className="Advertising-preface-text-subtitle">
           <p>
             1. รับฟังเป้าหมายทางธุรกิจ (Business Briefing) เข้าใจผลิตภัณฑ์
             จุดเด่น และกลุ่มลูกค้าหลัก
@@ -103,24 +113,26 @@ function Advertising() {
       </div>
 
       <h2> ทำไมแบรนด์เลือก PD Marketing</h2>
-      <div className="containner-text">
-        <div className="preface-text-subtitle">
-          <div className="dot-Text">
+      <div className="Advertising-containner-text">
+        <div className="Advertising-preface-text-subtitle">
+          <div className="Advertising-dot-Text">
             ผู้เชี่ยวชาญด้าน Performance Marketing มีประสบการณ์ทั้ง B2C และ B2B
           </div>
-          <div className="dot-Text">
+          <div className="Advertising-dot-Text">
             ทีมได้รับการรับรองจาก Meta และ Google Partner
           </div>
-          <div className="dot-Text">วางแผนเชิงข้อมูล Data-driven Strategy</div>
-          <div className="dot-Text">
+          <div className="Advertising-dot-Text">
+            วางแผนเชิงข้อมูล Data-driven Strategy
+          </div>
+          <div className="Advertising-dot-Text">
             รายงานผลโปร่งใส เข้าใจง่าย เห็นผลลัพธ์ทุกบาทที่ลงทุน
           </div>
         </div>
       </div>
 
       <h2> ผลลัพธ์จากลูกค้าบางส่วน</h2>
-      <div className="containner-text">
-        <div className="preface-text-subtitle">
+      <div className="Advertising-containner-text">
+        <div className="Advertising-preface-text-subtitle">
           <p>
             “ยอดขายจาก Facebook และ Google Ads เพิ่มขึ้นกว่า 70% ภายใน 3 เดือน”
             – ธุรกิจคลินิกสุขภาพ (2024)
@@ -133,9 +145,9 @@ function Advertising() {
       </div>
 
       <h2>คำถามที่พบบ่อย (FAQ)</h2>
-      <div className="containner-text">
-        <div className="preface-text-subtitle">
-          <div className="question-containner">
+      <div className="Advertising-containner-text">
+        <div className="Advertising-preface-text-subtitle">
+          <div className="Advertising-question-containner">
             <p>ถาม: ควรเริ่มจากแพลตฟอร์มไหนก่อน?</p>
             <p>
               ตอบ: ขึ้นอยู่กับพฤติกรรมลูกค้า เช่น สินค้าบริโภคเหมาะกับ Facebook
@@ -143,7 +155,7 @@ function Advertising() {
             </p>
           </div>
 
-          <div className="question-containner">
+          <div className="Advertising-question-containner">
             <p>ถาม: งบประมาณเริ่มต้นเท่าไรถึงจะเห็นผล?</p>
             <p>
               ตอบ: โดยทั่วไปเริ่มเห็นผลที่งบประมาณ 20,000–50,000 บาทต่อเดือน
@@ -151,7 +163,7 @@ function Advertising() {
             </p>
           </div>
 
-          <div className="question-containner">
+          <div className="Advertising-question-containner">
             <p>ถาม: เราจะรู้ได้อย่างไรว่าโฆษณามีประสิทธิภาพ?</p>
             <p>
               ตอบ: มีรายงานสรุปผลทุกเดือน พร้อมวิเคราะห์ KPI
@@ -163,9 +175,13 @@ function Advertising() {
         </div>
       </div>
 
-      <div className="container-button">
-        <button className="btn btn-appointment">นัดหมายพูดคุยฟรี</button>
-        <button className="btn btn-quote">ขอใบเสนอราคา</button>
+      <div className="Advertising-container-button">
+        <button className="Advertising-btn Advertising-btnbtn-appointment">
+          นัดหมายพูดคุยฟรี
+        </button>
+        <button className="Advertising-btn Advertising-btnbtn-quote">
+          ขอใบเสนอราคา
+        </button>
       </div>
     </section>
   );
