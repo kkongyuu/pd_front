@@ -5,10 +5,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import NavBarbottom from "./components/Navbarbottom";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Team from "./components/Team";
+// import NavBarbottom from "./components/Navbarbottom";
+// import Hero from "./components/Hero";
+// import Services from "./components/Services";
+// import Team from "./components/Team";
 
 import Footer from "./components/Footer";
 
@@ -18,6 +18,7 @@ import Package from "./page/Package";
 import Currentjob from "./page/Currentjob";
 import Contact from "./page/ContactPage";
 import ContactPage from "./page/ContactPage";
+import Marketing from "./page/Marketing";
 
 function App() {
   useEffect(() => {
@@ -93,6 +94,7 @@ function App() {
               <Route path="/package" element={<Package />} />
               <Route path="/current" element={<Currentjob />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/marketing" element={<Marketing />} />
             </Routes>
           </div>
           <Footer />

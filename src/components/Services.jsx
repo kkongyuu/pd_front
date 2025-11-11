@@ -10,19 +10,25 @@ import social from "../assets/img/service/social.jpg";
 import seo from "../assets/img/service/seo.jpg";
 import website from "../assets/img/service/website.jpg";
 import crm from "../assets/img/service/customer_service.png";
+import { Link } from "react-router-dom";
 
 const services = [
-  { img: marketing, text: "การตลาดออนไลน์ (Digital Marketing Strategy)" },
-  { img: online, text: "โฆษณาออนไลน์ (Online Advertising)" },
+  {
+    img: marketing,
+    text: "การตลาดออนไลน์ (Digital Marketing Strategy)",
+    Link: "/marketing",
+  },
+  { img: online, text: "โฆษณาออนไลน์ (Online Advertising)", Link: "" },
   {
     img: graphic,
     text: "กราฟิกและออกแบบสื่อ (Graphic Design & Creative Content)",
+    Link: "",
   },
-  { img: content, text: "Content Marketing" },
-  { img: social, text: "Social Media Marketing" },
-  { img: seo, text: "SEO" },
-  { img: website, text: "Website" },
-  { img: crm, text: "ระบบบริหารลูกค้า (CRM System)" },
+  { img: content, text: "Content Marketing", Link: "" },
+  { img: social, text: "Social Media Marketing", Link: "" },
+  { img: seo, text: "SEO", Link: "" },
+  { img: website, text: "Website", Link: "" },
+  { img: crm, text: "ระบบบริหารลูกค้า (CRM System)", Link: "" },
 ];
 
 function Services() {
@@ -85,13 +91,23 @@ function Services() {
               const engText = match ? match[2] : "";
 
               return (
-                <div key={idx} className="slide-item">
+                <div className="slide-item">
                   <div className="service-card">
-                    <img src={service.img} alt={service.text} />
-                    <div className="service-title">
-                      <div className="thai-text">{thaiText}</div>
-                      {engText && <div className="eng-text">{engText}</div>}
-                    </div>
+                    <Link
+                      key={idx}
+                      to={service.Link}
+                      style={{
+                        textDecoration: "none",
+                        color: "inherit",
+                        display: "block",
+                      }}
+                    >
+                      <img src={service.img} alt={service.text} />
+                      <div className="service-title">
+                        <div className="thai-text">{thaiText}</div>
+                        {engText && <div className="eng-text">{engText}</div>}
+                      </div>
+                    </Link>
                   </div>
                 </div>
               );
