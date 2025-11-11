@@ -5,7 +5,7 @@ function Preface() {
     <section className="containner">
       <h1>การตลาดออนไลน์</h1>
       <h1>Digital Marketing Strategy</h1>
-      <div className="divider"> </div>
+      {/* <div className="divider"> </div> */}
       <div className="containner-text">
         <div className="preface-text-frist">
           {
