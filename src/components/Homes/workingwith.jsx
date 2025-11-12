@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import "../Css/homecss/workingwith.css";
 import uniquecare from "../../assets/img/we_work/uniquecare.png";
 import assetelearning from "../../assets/img/we_work/assetelearning.png";
@@ -31,58 +32,54 @@ const company = [
   youencare,
 ];
 
+function shuffleArray(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 function WorkingWith() {
+  // ใช้ useMemo เพื่อ shuffle แค่ครั้งเดียวตอน mount
+  const shuffledRows = useMemo(() => {
+    return [
+      shuffleArray(company),
+      shuffleArray(company),
+      shuffleArray(company),
+      shuffleArray(company),
+    ];
+  }, []);
+
   return (
     <div className="homeworking-container">
       <h2>WE WORK WITH</h2>
       <div className="homeworking-content">
-        {/* แถว 1 - เลื่อนขึ้น */}
-        <div className="homeworking-slider">
-          <div className="slider-track scroll-up">
-            {company.map((imgSrc, idx) => (
-              <img key={`up1-${idx}`} src={imgSrc} alt={`company-${idx}`} />
-            ))}
-            {company.map((imgSrc, idx) => (
-              <img key={`up1-duplicate-${idx}`} src={imgSrc} alt={`company-${idx}`} />
-            ))}
+        {shuffledRows.map((row, rowIdx) => (
+          <div className="homeworking-slider" key={`row-${rowIdx}`}>
+            <div
+              className={`slider-track ${
+                rowIdx % 2 === 0 ? "scroll-up" : "scroll-down"
+              }`}
+            >
+              {row.map((imgSrc, idx) => (
+                <img
+                  key={`row${rowIdx}-img${idx}`}
+                  src={imgSrc}
+                  alt={`company-${idx}`}
+                />
+              ))}
+              {row.map((imgSrc, idx) => (
+                <img
+                  key={`row${rowIdx}-img-duplicate${idx}`}
+                  src={imgSrc}
+                  alt={`company-${idx}`}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-
-        {/* แถว 2 - เลื่อนลง */}
-        <div className="homeworking-slider">
-          <div className="slider-track scroll-down">
-            {company.map((imgSrc, idx) => (
-              <img key={`down1-${idx}`} src={imgSrc} alt={`company-${idx}`} />
-            ))}
-            {company.map((imgSrc, idx) => (
-              <img key={`down1-duplicate-${idx}`} src={imgSrc} alt={`company-${idx}`} />
-            ))}
-          </div>
-        </div>
-
-        {/* แถว 3 - เลื่อนขึ้น */}
-        <div className="homeworking-slider">
-          <div className="slider-track scroll-up">
-            {company.map((imgSrc, idx) => (
-              <img key={`up2-${idx}`} src={imgSrc} alt={`company-${idx}`} />
-            ))}
-            {company.map((imgSrc, idx) => (
-              <img key={`up2-duplicate-${idx}`} src={imgSrc} alt={`company-${idx}`} />
-            ))}
-          </div>
-        </div>
-
-        {/* แถว 4 - เลื่อนลง */}
-        <div className="homeworking-slider">
-          <div className="slider-track scroll-down">
-            {company.map((imgSrc, idx) => (
-              <img key={`down2-${idx}`} src={imgSrc} alt={`company-${idx}`} />
-            ))}
-            {company.map((imgSrc, idx) => (
-              <img key={`down2-duplicate-${idx}`} src={imgSrc} alt={`company-${idx}`} />
-            ))}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

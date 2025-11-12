@@ -20,7 +20,7 @@ import Contact from "./page/ContactPage";
 import ContactPage from "./page/ContactPage";
 import Marketing from "./page/Marketing";
 import Advertising_screen from "./page/Advertising_screen";
-
+import Graphics from "./page/Graphic";
 
 function App() {
   useEffect(() => {
@@ -98,6 +98,7 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/marketing" element={<Marketing />} />
               <Route path="/advertising" element={<Advertising_screen />} />
+              <Route path="/graphics" element={<Graphics />} />
             </Routes>
           </div>
           <Footer />

@@ -9,9 +9,9 @@ function Home() {
   return (
     <main>
       <Hero />
-      <VideoHome />
       <Services />
       <Working_with />
+      <VideoHome />
       <Team />
       <Contact />
     </main>

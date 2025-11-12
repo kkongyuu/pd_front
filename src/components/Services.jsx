@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Css/slider.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import marketing from "../assets/img/service/marketing.png";
 import online from "../assets/img/service/online.png";
@@ -10,38 +11,44 @@ import social from "../assets/img/service/social.jpg";
 import seo from "../assets/img/service/seo.jpg";
 import website from "../assets/img/service/website.jpg";
 import crm from "../assets/img/service/customer_service.png";
-import { Link } from "react-router-dom";
 
 const services = [
   {
     img: marketing,
     text: "การตลาดออนไลน์ (Digital Marketing Strategy)",
-    Link: "/marketing",
+    link: "/marketing",
   },
   {
     img: online,
     text: "โฆษณาออนไลน์ (Online Advertising)",
-    Link: "/advertising",
+    link: "/advertising",
   },
   {
     img: graphic,
     text: "กราฟิกและออกแบบสื่อ (Graphic Design & Creative Content)",
-    Link: "",
+    link: "/graphics",
   },
-  { img: content, text: "Content Marketing", Link: "" },
-  { img: social, text: "Social Media Marketing", Link: "" },
-  { img: seo, text: "SEO", Link: "" },
-  { img: website, text: "Website", Link: "" },
-  { img: crm, text: "ระบบบริหารลูกค้า (CRM System)", Link: "" },
+  { img: content, text: "Content Marketing", link: "" },
+  { img: social, text: "Social Media Marketing", link: "" },
+  { img: seo, text: "SEO", link: "" },
+  { img: website, text: "Website", link: "" },
+  { img: crm, text: "ระบบบริหารลูกค้า (CRM System)", link: "" },
 ];
 
 function Services() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const visibleCount = 3;
+  const [visibleCount, setVisibleCount] = useState(3);
 
-  // สร้าง array ที่มีการทำซ้ำเพื่อให้เกิด infinite loop effect
+  useEffect(() => {
+    const handleResize = () => {
+      setVisibleCount(window.innerWidth <= 768 ? 1 : 3);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const extendedServices = [...services, ...services, ...services];
-  const startIndex = services.length; // เริ่มที่ชุดกลาง
+  const startIndex = services.length;
 
   const [slideIndex, setSlideIndex] = useState(startIndex);
   const [isTransitioning, setIsTransitioning] = useState(true);
@@ -56,27 +63,28 @@ function Services() {
     setSlideIndex((prev) => prev + 1);
   };
 
-  // จัดการการวนกลับเมื่อถึงจุดสุดท้าย
   const handleTransitionEnd = () => {
     if (slideIndex >= startIndex + services.length) {
-      setIsTransitioning(false);
-      setSlideIndex(startIndex);
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setSlideIndex(startIndex);
+      }, 50);
     } else if (slideIndex < startIndex) {
-      setIsTransitioning(false);
-      setSlideIndex(startIndex + services.length - 1);
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setSlideIndex(startIndex + services.length - 1);
+      }, 50);
     }
   };
 
   return (
-    <section className="services-section">
+    <div className="services-section">
       <h2>บริการของเรา</h2>
       <div className="services-slider">
-        {/* Previous Button */}
         <button onClick={prevSlide} className="slider-btn prev">
-          <FaArrowLeft size={20} color="var(--text)" />
+          <FaArrowLeft size={20} />
         </button>
 
-        {/* Slider Container */}
         <div className="slider-container">
           <div
             className="slider-images"
@@ -89,29 +97,29 @@ function Services() {
             onTransitionEnd={handleTransitionEnd}
           >
             {extendedServices.map((service, idx) => {
-              // แยกข้อความไทยและอังกฤษ
               const match = service.text.match(/^(.*?)\s*\((.*?)\)$/);
               const thaiText = match ? match[1] : service.text;
               const engText = match ? match[2] : "";
-
               return (
-                <div className="slide-item">
+                <div className="slide-item" key={idx}>
                   <div className="service-card">
-                    <Link
-                      key={idx}
-                      to={service.Link}
-                      style={{
-                        textDecoration: "none",
-                        color: "inherit",
-                        display: "block",
-                      }}
-                    >
-                      <img src={service.img} alt={service.text} />
-                      <div className="service-title">
-                        <div className="thai-text">{thaiText}</div>
-                        {engText && <div className="eng-text">{engText}</div>}
+                    {service.link ? (
+                      <Link to={service.link} className="slider-link">
+                        <img src={service.img} alt={service.text} />
+                        <div className="service-title">
+                          <div className="thai-text">{thaiText}</div>
+                          {engText && <div className="eng-text">{engText}</div>}
+                        </div>
+                      </Link>
+                    ) : (
+                      <div className="slider-link disabled">
+                        <img src={service.img} alt={service.text} />
+                        <div className="service-title">
+                          <div className="thai-text">{thaiText}</div>
+                          {engText && <div className="eng-text">{engText}</div>}
+                        </div>
                       </div>
-                    </Link>
+                    )}
                   </div>
                 </div>
               );
@@ -119,12 +127,11 @@ function Services() {
           </div>
         </div>
 
-        {/* Next Button */}
         <button onClick={nextSlide} className="slider-btn next">
-          <FaArrowRight size={20} color="var(--text)" />
+          <FaArrowRight size={20} />
         </button>
       </div>
-    </section>
+    </div>
   );
 }
 

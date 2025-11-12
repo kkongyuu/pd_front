@@ -64,7 +64,6 @@ body.light-mode {
   --text: #1a1a1a;
   --primary: #e63946;
   --texthero: #333333
-
 }
 
 body.light-mode nav {
@@ -117,6 +116,7 @@ body.light-mode .team-member {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(180deg);
   }
@@ -249,7 +249,7 @@ a {
 
 
 section {
-  min-height: auto;
+  /* min-height: auto; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -261,7 +261,7 @@ section {
 
 .section-content {
   max-width: 900px;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 .section-content h2 {
@@ -283,21 +283,24 @@ section {
 
 /*hero compnent*/
 .hero {
-    margin-top: 90px;
-  }
+  margin-top: 90px;
+}
 
 .hero h1 {
-    font-size: 1.8rem;
-  }
-  .hero p {
-    font-size: 1.1rem;
-  }
-  .section-content h2 {
-    font-size: 1.8rem;
-  }
-  .section-content p {
-    font-size: 1rem;
-  }
+  font-size: 1.8rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+.section-content h2 {
+  font-size: 1.8rem;
+}
+
+.section-content p {
+  font-size: 1rem;
+}
 
 
 .hero h1 {
@@ -310,7 +313,7 @@ section {
 .hero p {
   font-size: 1.4rem;
   opacity: 0.95;
-  
+
 }
 
 
@@ -318,7 +321,7 @@ section {
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
   max-width: 900px;
   text-align: left;
   margin: 2rem auto;
@@ -336,14 +339,15 @@ section {
   background-color: #fff;
   display: inline-block;
   padding: 0 1rem;
-  margin-left: 2rem; 
+  margin-left: 2rem;
 }
 
 /* กรอบล้อมเนื้อหา (ต่อจากหัวข้อ) */
 .hero-bio-content {
   position: relative;
   padding: 2rem;
-  margin-top: -1rem; /* ดันขึ้นให้ดูต่อกับ h2 */
+  margin-top: -1rem;
+  /* ดันขึ้นให้ดูต่อกับ h2 */
   border: 2px solid var(--primary);
   border-radius: 12px;
 }
@@ -390,9 +394,11 @@ section {
   .hero {
     margin-top: 40px;
   }
+
   .hero h1 {
     font-size: 2.0rem;
   }
+
   .hero-bio-card {
     padding: 1.5rem;
     margin: 1rem;
@@ -400,7 +406,8 @@ section {
 
   .hero-bio-card h2 {
     font-size: 1.6rem;
-    margin-left: 1rem; /* ลดระยะซ้ายลงบนมือถือ */
+    margin-left: 1rem;
+    /* ลดระยะซ้ายลงบนมือถือ */
     padding: 0 0.5rem;
   }
 
@@ -415,19 +422,22 @@ section {
   .hero-bio-content p {
     font-size: 1rem;
   }
+
   .hero-bio-content blockquote {
-  font-size: 7.6px;
-  
-}
+    font-size: 7.6px;
+
+  }
 }
 
 @media (max-width: 480px) {
   .hero {
     margin-top: 40px;
   }
+
   .hero h1 {
     font-size: 2.0rem;
   }
+
   .hero-bio-card {
     padding: 1rem;
     margin: 0.5rem;
@@ -458,7 +468,7 @@ footer {
 
 #team {
   width: 100%;
-  padding: 1rem 0rem; 
+  padding: 1rem 0rem;
   box-sizing: border-box;
 }
 
@@ -471,11 +481,13 @@ footer {
   cursor: grab;
   user-select: none;
   mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-  scrollbar-width: none; /* ซ่อน scrollbar บน Firefox */
+  scrollbar-width: none;
+  /* ซ่อน scrollbar บน Firefox */
 }
 
 .team-scroll-wrapper::-webkit-scrollbar {
-  display: none; /* ซ่อน scrollbar บน Chrome/Safari */
+  display: none;
+  /* ซ่อน scrollbar บน Chrome/Safari */
 }
 
 .team-scroll-wrapper:active {
@@ -486,13 +498,14 @@ footer {
   display: flex;
   gap: 1.5rem;
   width: max-content;
-  animation: infiniteScroll 60s linear infinite; /* ✅ auto-scroll ตลอดเวลา */
+  animation: infiniteScroll 60s linear infinite;
+  /* ✅ auto-scroll ตลอดเวลา */
 }
 
 .team-member {
   flex: 0 0 300px;
   width: 300px;
-   max-width: 90vw; 
+  max-width: 90vw;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   text-align: center;
@@ -525,6 +538,7 @@ footer {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -557,6 +571,7 @@ footer {
   0% {
     transform: rotate(180deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -625,16 +640,18 @@ input:checked+.slider:before {
 /*serviceComponent */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(340px, 1fr)); /* กำหนดความกว้างขั้นต่ำของกล่อง */
+  grid-template-columns: repeat(3, minmax(340px, 1fr));
+  /* กำหนดความกว้างขั้นต่ำของกล่อง */
   gap: 2.5rem;
-  justify-content: center; /* จัดให้อยู่กลาง */
+  justify-content: center;
+  /* จัดให้อยู่กลาง */
   margin-top: 2rem;
 }
 
 .service-box {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 2px 16px rgba(213,159,56,0.08);
+  box-shadow: 0 2px 16px rgba(213, 159, 56, 0.08);
   padding: 2.5rem 2rem;
   text-align: left;
   transition: box-shadow 0.2s;
@@ -643,7 +660,8 @@ input:checked+.slider:before {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 380px; /* ควบคุมขนาดให้ใกล้เคียงในภาพ */
+  max-width: 380px;
+  /* ควบคุมขนาดให้ใกล้เคียงในภาพ */
 }
 
 
@@ -657,7 +675,8 @@ input:checked+.slider:before {
 .service-icon {
   font-size: 2rem;
   color: var(--primary);
-  margin-bottom: 0; /* ยกเลิก margin-bottom เดิม */
+  margin-bottom: 0;
+  /* ยกเลิก margin-bottom เดิม */
 }
 
 .service-box h3 {
@@ -674,18 +693,22 @@ input:checked+.slider:before {
 .package-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem; /* ลดระยะห่าง */
+  gap: 1rem;
+  /* ลดระยะห่าง */
   margin: 2rem 0;
-  align-items: start; /* จัดให้รูปอยู่ระดับเดียวกัน */
+  align-items: start;
+  /* จัดให้รูปอยู่ระดับเดียวกัน */
 }
 
 .package-grid img {
   width: 100%;
-  max-width: 550px; /* ปรับขนาดตามต้องการ */
+  max-width: 550px;
+  /* ปรับขนาดตามต้องการ */
   border-radius: 12px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
   object-fit: cover;
-  margin: 0 auto; /* จัดรูปให้อยู่ตรงกลาง column */
+  margin: 0 auto;
+  /* จัดรูปให้อยู่ตรงกลาง column */
   display: block;
   margin-top: 80px;
 }
@@ -693,24 +716,30 @@ input:checked+.slider:before {
 /* CurrentJobComponent */
 .job-grid {
   display: grid;
-  grid-template-columns: 1fr; /* 1 รูปต่อแถว */
+  grid-template-columns: 1fr;
+  /* 1 รูปต่อแถว */
   gap: 1.5rem;
   margin: 2rem auto;
   width: 100%;
-  max-width: 800px; /* กำหนดความกว้างสูงสุดของ container */
+  max-width: 800px;
+  /* กำหนดความกว้างสูงสุดของ container */
   margin-top: 200px;
   text-align: center;
 }
 
 .job-grid img {
-  width: 100%;         /* กว้างเต็ม container */
-  height: 100%;       /* กำหนดความสูงรูปตามต้องการ */
+  width: 100%;
+  /* กว้างเต็ม container */
+  height: 100%;
+  /* กำหนดความสูงรูปตามต้องการ */
   border-radius: 12px;
-  object-fit: cover;   /* ครอบรูปเต็มพื้นที่ ไม่บิดเบี้ยว */
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  object-fit: cover;
+  /* ครอบรูปเต็มพื้นที่ ไม่บิดเบี้ยว */
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
   display: block;
   margin-top: 80px;
 }
+
 .job-grid h2 {
   font-size: 2rem;
   color: var(--primary);
@@ -739,7 +768,7 @@ input:checked+.slider:before {
 
   .nav-right {
     flex-direction: column;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 80px;
     right: 0;
@@ -758,11 +787,11 @@ input:checked+.slider:before {
   }
 
 
-  
 
-   section {
+
+  /* section {
     padding: 4rem 2rem;
-  }
+  } */
 
   /* .team-member {
     width: 60%;
@@ -774,7 +803,7 @@ input:checked+.slider:before {
   animation: scrollRight 15s linear infinite;
 } */
 
-  
+
 }
 
 /* @media (max-width: 768px) {
@@ -794,30 +823,39 @@ input:checked+.slider:before {
 
 @media (max-width: 768px) {
   .services-grid {
-    grid-template-columns: repeat(2, minmax(150px, 1fr)); /* กำหนดความกว้างขั้นต่ำและให้ยืดได้ */
-    gap: 1rem; /* ลด gap ให้เหมาะกับมือถือ */
-    justify-content: center; /* จัดกึ่งกลาง */
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    /* กำหนดความกว้างขั้นต่ำและให้ยืดได้ */
+    gap: 1rem;
+    /* ลด gap ให้เหมาะกับมือถือ */
+    justify-content: center;
+    /* จัดกึ่งกลาง */
   }
 
   .service-box {
-    max-width: 100%; /* ไม่ให้เกิน container */
-    min-height: auto; /* ให้ความสูงปรับตามเนื้อหา */
-    padding: 1.5rem 1rem; /* ลด padding ให้เล็กลง */
+    max-width: 100%;
+    /* ไม่ให้เกิน container */
+    min-height: auto;
+    /* ให้ความสูงปรับตามเนื้อหา */
+    padding: 1.5rem 1rem;
+    /* ลด padding ให้เล็กลง */
   }
 
   .service-box p {
-    font-size: 0.475rem; /* ลดขนาดตัวอักษรสำหรับมือถือ */
+    font-size: 0.475rem;
+    /* ลดขนาดตัวอักษรสำหรับมือถือ */
   }
 
   .service-icon {
-    font-size: 1.2rem; /* ลดขนาดไอคอน */
+    font-size: 1.2rem;
+    /* ลดขนาดไอคอน */
   }
+
   .service-box h3 {
-  color: var(--primary);
-  margin-bottom: 0.75rem;
-  font-size: 0.475rem;
-}
-  
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    font-size: 0.475rem;
+  }
+
 }
 
 /* ====== new css developer toel ====== */
@@ -840,7 +878,7 @@ input:checked+.slider:before {
 .nav-bottom {
   width: 100%;
   display: flex;
-  
+
   /* align-items: center; */
   /* flex-direction: column; */
   justify-content: space-between;
@@ -952,26 +990,33 @@ input:checked+.slider:before {
 .app-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* ครอบเต็มหน้าจอ */
+  min-height: 100vh;
+  /* ครอบเต็มหน้าจอ */
 }
 
 .main-content {
-  flex: 1; /* ส่วนเนื้อหายืดเต็มที่ */
+  flex: 1;
+  /* ส่วนเนื้อหายืดเต็มที่ */
 }
 
 
 .containner-league {
   border: 1.5px solid var(--primary);
-  padding: 2px 3px; /* ลด padding ให้กระชับ */
+  padding: 2px 3px;
+  /* ลด padding ให้กระชับ */
   display: flex;
-  align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+  align-items: center;
+  /* จัดให้อยู่ตรงกลางแนวตั้ง */
   border-radius: 6px;
-  height: 32px; /* เท่ากับขนาดของ FaLine */
+  height: 32px;
+  /* เท่ากับขนาดของ FaLine */
 }
 
 .containner-league h3 {
-  font-size: 15px; /* ลดขนาดตัวอักษร */
-  margin: 0; /* เอาช่องว่างเริ่มต้นของ h3 ออก */
+  font-size: 15px;
+  /* ลดขนาดตัวอักษร */
+  margin: 0;
+  /* เอาช่องว่างเริ่มต้นของ h3 ออก */
   line-height: 1;
   font-weight: 400;
 }

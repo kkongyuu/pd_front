@@ -14,7 +14,9 @@ function Advertising() {
         </div>
       </div>
 
-      <h2>บริการภายใต้หมวด “โฆษณาออนไลน์ (Online Advertising)”</h2>
+      <span className="submain-text">
+        บริการภายใต้หมวด “โฆษณาออนไลน์ (Online Advertising)”
+      </span>
       <div className="Advertising-containner-text">
         <h3> Facebook & Instagram Ads</h3>
         <div className="Advertising-preface-text-subtitle">
