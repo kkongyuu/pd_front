@@ -62,8 +62,9 @@ body.light-mode {
   --background-start: #fefefe;
   --background-end: #ffffff;
   --text: #1a1a1a;
-  --primary: #e63946;
+  --primary: #030303;
   --texthero: #333333
+  
 }
 
 body.light-mode nav {
