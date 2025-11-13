@@ -1,13 +1,13 @@
-import "../Css/marketing/preface.css";
+import "../Css/Digital_marketing/preface.css";
 
 function Preface() {
   return (
-    <section className="Marketing-containner">
+    <section className="Digital_Marketing-containner">
       <h1>การตลาดออนไลน์</h1>
       <h1>Digital Marketing Strategy</h1>
       {/* <div className="divider"> </div> */}
-      <div className="Marketing-containner-text">
-        <div className="Marketing-preface-text-frist">
+      <div className="Digital_Marketing-containner-text">
+        <div className="Digital_Marketing-preface-text-frist">
           {
             " สร้างกลยุทธ์การตลาดออนไลน์อย่างมีทิศทางบนพื้นฐานข้อมูลจริงและผลลัพธ์ที่วัดได้ ในยุคที่สื่อออนไลน์เปลี่ยนแปลงอย่างรวดเร็ว การทำการตลาดอย่างมี“กลยุทธ์” คือหัวใจของความยั่งยืนทางธุรกิจ PD Marketing Innovateให้บริการวางแผน Digital Marketing Strategy แบบครบวงจรโดยอ้างอิงข้อมูลเชิงลึกและพฤติกรรมของกลุ่มเป้าหมายเพื่อให้ทุกงบประมาณที่ลงทุนเกิดผลลัพธ์สูงสุดและต่อยอดได้ในระยะยาว"
           }
@@ -15,12 +15,12 @@ function Preface() {
       </div>
 
       <h2>บริการ การตลาดออนไลน์ครบวงจร</h2>
-      <div className="Marketing-containner-text">
-        <div className="Marketing-preface-text">
+      <div className="Digital_Marketing-containner-text">
+        <div className="Digital_Marketing-preface-text">
           บริการทั้งหมดออกแบบมาให้เชื่อมโยงกัน สามารถเลือกใช้แยกเฉพาะด้าน
           หรือทำแบบ Full Package ได้
         </div>
-        <div className="Marketing-preface-text-subtitle">
+        <div className="Digital_Marketing-preface-text-subtitle">
           <p>
             {
               "1) วิเคราะห์ตลาดและกลุ่มเป้าหมาย (Market & Audience Research) เก็บข้อมูลเชิงลึกของตลาด พฤติกรรมผู้บริโภค และคู่แข่ง เพื่อระบุโอกาสและความท้าทายของธุรกิจอย่างรอบด้าน"
@@ -51,8 +51,8 @@ function Preface() {
       </div>
 
       <h2>ขั้นตอนการทำงาน (Working Process)</h2>
-      <div className="Marketing-containner-text">
-        <div className="Marketing-preface-text-subtitle">
+      <div className="Digital_Marketing-containner-text">
+        <div className="Digital_Marketing-preface-text-subtitle">
           <p>{"1) รับฟังและทำความเข้าใจธุรกิจของลูกค้า"}</p>
           <p>{"2) วิเคราะห์ตลาดและคู่แข่งในเชิงลึก"}</p>
           <p>{"3) ออกแบบกลยุทธ์และแผนสื่อ"}</p>
@@ -63,8 +63,8 @@ function Preface() {
       </div>
 
       <h2>จุดแข็งของบริการ PD Marketing</h2>
-      <div className="Marketing-containner-text">
-        <div className="Marketing-preface-text-subtitle">
+      <div className="Digital_Marketing-containner-text">
+        <div className="Digital_Marketing-preface-text-subtitle">
           <p>
             {
               "Strategic Thinking: ไม่เพียงแค่ยิงแอด แต่คิดเชิงกลยุทธ์อย่างเป็นระบบ"
@@ -85,8 +85,8 @@ function Preface() {
       </div>
 
       <h2>คำถามที่พบบ่อย (FAQ)</h2>
-      <div className="Marketing-containner-text">
-        <div className="Marketing-preface-text-subtitle">
+      <div className="Digital_Marketing-containner-text">
+        <div className="Digital_Marketing-preface-text-subtitle">
           <div className="question-containner">
             <p>ถาม: ต้องใช้งบประมาณเท่าไรในการเริ่มต้น?</p>
             <p>
@@ -116,9 +116,9 @@ function Preface() {
         </div>
       </div>
 
-      <div className="Marketing-container-button">
-        <button className="Marketing-btn Marketing-btn-appointment">นัดหมายพูดคุยฟรี</button>
-        <button className="Marketing-btn Marketing-btn-quote">ขอใบเสนอราคา</button>
+      <div className="Digital_Marketing-container-button">
+        <button className="Digital_Marketing-btn Digital_Marketing-btn-appointment">นัดหมายพูดคุยฟรี</button>
+        <button className="Digital_Marketing-btn Digital_Marketing-btn-quote">ขอใบเสนอราคา</button>
       </div>
     </section>
   );

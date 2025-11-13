@@ -28,7 +28,7 @@ const services = [
     text: "กราฟิกและออกแบบสื่อ (Graphic Design & Creative Content)",
     link: "/graphics",
   },
-  { img: content, text: "Content Marketing", link: "" },
+  { img: content, text: "Content Marketing", link: "/content_marketing" },
   { img: social, text: "Social Media Marketing", link: "" },
   { img: seo, text: "SEO", link: "" },
   { img: website, text: "Website", link: "" },

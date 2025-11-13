@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import Preface from "../components/Digital_marketings/preface.jsx";
+import Content_marketing from "../components/content_marketing/contents_marketing.jsx";
 
-function Marketing() {
+function Contents_Marketing() {
   useEffect(() => {
     // เลื่อนไปที่ top ของหน้าเมื่อ component โหลด
     window.scrollTo({
@@ -11,9 +11,9 @@ function Marketing() {
   }, []);
   return (
     <main>
-      <Preface />
+      <Content_marketing />
     </main>
   );
 }
 
-export default Marketing;
+export default Contents_Marketing;

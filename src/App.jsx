@@ -21,6 +21,7 @@ import ContactPage from "./page/ContactPage";
 import Marketing from "./page/Marketing";
 import Advertising_screen from "./page/Advertising_screen";
 import Graphics from "./page/Graphic";
+import Contents_Marketing from "./page/Content_Marketing";
 
 function App() {
   useEffect(() => {
@@ -99,6 +100,10 @@ function App() {
               <Route path="/marketing" element={<Marketing />} />
               <Route path="/advertising" element={<Advertising_screen />} />
               <Route path="/graphics" element={<Graphics />} />
+              <Route
+                path="/content_marketing"
+                element={<Contents_Marketing />}
+              />
             </Routes>
           </div>
           <Footer />
