@@ -32,8 +32,7 @@ function Content_marketing() {
             ออกแบบคอนเทนต์เชิงกลยุทธ์ที่เน้นคุณค่าและการสื่อสารอย่างมีเป้าหมาย
           </div>
           <div className="Content_Marketing-dot-Text">
-            กำหนด Key Message, Tone of Voice และแนวทางการเล่าเรื่อง
-            (Storytelling Framework)
+            กำหนด Key Message, Tone of Voice และแนวทางการเล่าเรื่อง (Storytelling Framework)
           </div>
         </div>
 
@@ -43,8 +42,7 @@ function Content_marketing() {
             จัดทำแผนคอนเทนต์ประจำเดือน พร้อมระบุโพสต์แต่ละวัน/หัวข้อ/แพลตฟอร์ม
           </div>
           <div className="Content_Marketing-dot-Text">
-            จัดลำดับคอนเทนต์ตามวัตถุประสงค์ (Awareness – Engagement –
-            Conversion)
+            จัดลำดับคอนเทนต์ตามวัตถุประสงค์ (Awareness – Engagement – Conversion)
           </div>
           <div className="Content_Marketing-dot-Text">
             บริหาร Timeline การผลิตคอนเทนต์ให้ต่อเนื่องและเป็นระบบ
@@ -99,18 +97,15 @@ function Content_marketing() {
             1. Research & Analysis ศึกษาธุรกิจ คู่แข่ง และพฤติกรรมกลุ่มเป้าหมาย
           </p>
           <p>
-            2. Content Strategy
-            วางแนวทางคอนเทนต์ให้สอดคล้องกับเป้าหมายทางการตลาด
+            2. Content Strategy วางแนวทางคอนเทนต์ให้สอดคล้องกับเป้าหมายทางการตลาด
           </p>
 
           <p>
-            3. Content Production
-            สร้างสรรค์เนื้อหาในรูปแบบที่เหมาะสมกับแต่ละแพลตฟอร์ม
+            3. Content Production สร้างสรรค์เนื้อหาในรูปแบบที่เหมาะสมกับแต่ละแพลตฟอร์ม
           </p>
 
           <p>
-            4. Distribution & Optimization
-            เผยแพร่และปรับปรุงประสิทธิภาพอย่างต่อเนื่อง
+            4. Distribution & Optimization เผยแพร่และปรับปรุงประสิทธิภาพอย่างต่อเนื่อง
           </p>
 
           <p>5. Measurement วัดผลลัพธ์และนำข้อมูลมาพัฒนาในรอบถัดไป</p>
@@ -139,12 +134,10 @@ function Content_marketing() {
       <div className="Content_Marketing-containner-text">
         <div className="Content_Marketing-preface-text-subtitle">
           <p>
-            “ยอดขายจาก Facebook และ Google Ads เพิ่มขึ้นกว่า 70% ภายใน 3 เดือน”
-            – ธุรกิจคลินิกสุขภาพ (2024)
+            “ยอดขายจาก Facebook และ Google Ads เพิ่มขึ้นกว่า 70% ภายใน 3 เดือน” – ธุรกิจคลินิกสุขภาพ (2024)
           </p>
           <p>
-            “ค่าใช้จ่ายต่อการได้ลูกค้าใหม่ (CPL) ลดลงกว่า 40%
-            หลังจากปรับโครงสร้างแคมเปญ” – ธุรกิจ E-commerce (2025){" "}
+            “ค่าใช้จ่ายต่อการได้ลูกค้าใหม่ (CPL) ลดลงกว่า 40% หลังจากปรับโครงสร้างแคมเปญ” – ธุรกิจ E-commerce (2025){" "}
           </p>
         </div>
       </div>
@@ -155,36 +148,30 @@ function Content_marketing() {
           <div className="Content_Marketing-question-containner">
             <p>ถาม: ต้องมีแผนการตลาดก่อนหรือไม่?</p>
             <p>
-              ตอบ: ไม่จำเป็น
-              ทีมของเราสามารถช่วยวางกลยุทธ์คอนเทนต์ให้เหมาะกับเป้าหมายธุรกิจได้ตั้งแต่ต้น
+              ตอบ: ไม่จำเป็น ทีมของเราสามารถช่วยวางกลยุทธ์คอนเทนต์ให้เหมาะกับเป้าหมายธุรกิจได้ตั้งแต่ต้น
             </p>
           </div>
 
           <div className="Content_Marketing-question-containner">
             <p>ถาม: บริการนี้รวมการออกแบบภาพหรือไม่?</p>
             <p>
-              ตอบ: ไม่รวมค่ะ
-              เรามีทีมกราฟิกและครีเอทีฟช่วยออกแบบภาพและวิดีโอประกอบคอนเทนต์.
+              ตอบ: ไม่รวมค่ะ เรามีทีมกราฟิกและครีเอทีฟช่วยออกแบบภาพและวิดีโอประกอบคอนเทนต์.
             </p>
           </div>
 
           <div className="Content_Marketing-question-containner">
             <p>
-              ตอบ: ไม่รวมค่ะ
-              เรามีทีมกราฟิกและครีเอทีฟช่วยออกแบบภาพและวิดีโอประกอบคอนเทนต์.
+              ตอบ: ไม่รวมค่ะ เรามีทีมกราฟิกและครีเอทีฟช่วยออกแบบภาพและวิดีโอประกอบคอนเทนต์.
             </p>
             <p>
-              ตอบ: เรามีระบบรายงานผลรายเดือน ทั้งด้าน Reach, Engagement,
-              Conversion และ Insight ของผู้ติดตาม.
+              ตอบ: เรามีระบบรายงานผลรายเดือน ทั้งด้าน Reach, Engagement, Conversion และ Insight ของผู้ติดตาม.
             </p>
           </div>
         </div>
       </div>
 
       <span className="Content_Marketing-quotation-text">
-        สร้างเนื้อหาที่โดดเด่นและมีคุณค่า
-        เพื่อขับเคลื่อนแบรนด์ของคุณให้เติบโตอย่างยั่งยืน ปรึกษาผู้เชี่ยวชาญด้าน
-        Content Marketing จาก PD Marketing วันนี้.
+        สร้างเนื้อหาที่โดดเด่นและมีคุณค่า เพื่อขับเคลื่อนแบรนด์ของคุณให้เติบโตอย่างยั่งยืน ปรึกษาผู้เชี่ยวชาญด้าน Content Marketing จาก PD Marketing วันนี้.
       </span>
 
       <div className="Content_Marketing-container-button">

@@ -65,22 +65,20 @@ function Preface() {
       <h2>จุดแข็งของบริการ PD Marketing</h2>
       <div className="Digital_Marketing-containner-text">
         <div className="Digital_Marketing-preface-text-subtitle">
-          <p>
-            {
-              "Strategic Thinking: ไม่เพียงแค่ยิงแอด แต่คิดเชิงกลยุทธ์อย่างเป็นระบบ"
-            }
-          </p>
-          <p>{"Data‑driven Planning: ทุกการตัดสินใจอิงจากข้อมูลจริง."}</p>
-          <p>
-            {
-              "Transparent Result: รายงานผลชัดเจน เข้าใจง่าย เห็นตัวเลขจริงทุกเดือน."
-            }
-          </p>
-          <p>
-            {
-              "ทีมงานผู้เชี่ยวชาญด้าน Digital Marketing: มีประสบการณ์ตรงทั้งฝั่งแบรนด์และเอเจนซี่."
-            }
-          </p>
+          <div className="Digital_Marketing-dot-Text">
+            Strategic Thinking: ไม่เพียงแค่ยิงแอด แต่คิดเชิงกลยุทธ์อย่างเป็นระบบ
+          </div>
+          <div className="Digital_Marketing-dot-Text">
+            Data‑driven Planning: ทุกการตัดสินใจอิงจากข้อมูลจริง.
+          </div>
+          <div className="Digital_Marketing-dot-Text">
+            Transparent Result: รายงานผลชัดเจน เข้าใจง่าย
+            เห็นตัวเลขจริงทุกเดือน.
+          </div>
+          <div className="Digital_Marketing-dot-Text">
+            ทีมงานผู้เชี่ยวชาญด้าน Digital Marketing:
+            มีประสบการณ์ตรงทั้งฝั่งแบรนด์และเอเจนซี่.
+          </div>
         </div>
       </div>
 
@@ -117,8 +115,12 @@ function Preface() {
       </div>
 
       <div className="Digital_Marketing-container-button">
-        <button className="Digital_Marketing-btn Digital_Marketing-btn-appointment">นัดหมายพูดคุยฟรี</button>
-        <button className="Digital_Marketing-btn Digital_Marketing-btn-quote">ขอใบเสนอราคา</button>
+        <button className="Digital_Marketing-btn Digital_Marketing-btn-appointment">
+          นัดหมายพูดคุยฟรี
+        </button>
+        <button className="Digital_Marketing-btn Digital_Marketing-btn-quote">
+          ขอใบเสนอราคา
+        </button>
       </div>
     </section>
   );

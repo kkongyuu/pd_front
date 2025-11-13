@@ -184,6 +184,15 @@
 
   .Graphic-preface-text-frist {
     font-size: 1.1rem;
+    line-height: 1.6;
+    /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 10px;
+    /* เว้นช่องแต่ละบรรทัด */
+    text-align: left;
+    /* จัดให้อ่านง่าย */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .Graphic-containner h2 {
@@ -192,6 +201,15 @@
 
   .Graphic-submain-text {
     font-size: 1.97rem;
+    line-height: 1.6;
+    /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 10px;
+    /* เว้นช่องแต่ละบรรทัด */
+    text-align: left;
+    /* จัดให้อ่านง่าย */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .Graphic-containner h3 {
@@ -200,13 +218,40 @@
 
   .Graphic-dot-Text {
     font-size: 1.15rem;
+    line-height: 1.6;
+    /* ระยะห่างระหว่างบรรทัด */
+    /* margin-bottom: 10px; */
+    /* เว้นช่องแต่ละบรรทัด */
+    text-align: left;
+    /* จัดให้อ่านง่าย */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .Graphic-preface-text-subtitle p {
     font-size: 1.1rem;
+    line-height: 1.6;
+    /* ระยะห่างระหว่างบรรทัด */
+    /* margin-bottom: 10px; */
+    /* เว้นช่องแต่ละบรรทัด */
+    text-align: left;
+    /* จัดให้อ่านง่าย */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .quotation-text {
     font-size: 1.2rem;
+    line-height: 1.6;
+    /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 10px;
+    /* เว้นช่องแต่ละบรรทัด */
+    text-align: left;
+    /* จัดให้อ่านง่าย */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
 }

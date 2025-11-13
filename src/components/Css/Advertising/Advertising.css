@@ -178,6 +178,15 @@
 
   .Advertising-preface-text-frist {
     font-size: 1.1rem;
+    line-height: 1.6;
+    /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 10px;
+    /* เว้นช่องแต่ละบรรทัด */
+    text-align: left;
+    /* จัดให้อ่านง่าย */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .Advertising-containner h2 {
@@ -186,17 +195,45 @@
 
   .submain-text {
     font-size: 1.97rem;
+    line-height: 1.6;
+    /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 10px;
+    /* เว้นช่องแต่ละบรรทัด */
+    text-align: left;
+    /* จัดให้อ่านง่าย */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .Advertising-containner h3 {
     font-size: 1.5rem;
+
   }
 
   .Advertising-dot-Text {
     font-size: 1.15rem;
+    line-height: 1.6;
+    /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 10px;
+    /* เว้นช่องแต่ละบรรทัด */
+    text-align: left;
+    /* จัดให้อ่านง่าย */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .Advertising-preface-text-subtitle p {
     font-size: 1.1rem;
+    line-height: 1.6;
+    /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 10px;
+    /* เว้นช่องแต่ละบรรทัด */
+    text-align: left;
+    /* จัดให้อ่านง่าย */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
 }

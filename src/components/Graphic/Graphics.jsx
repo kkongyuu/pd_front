@@ -116,18 +116,18 @@ function Content_Graphuics() {
       <h2> จุดแข็งของบริการ PD Marketing</h2>
       <div className="Graphic-containner-text">
         <div className="Graphic-preface-text-subtitle">
-          <p>
+          <div className="Graphic-dot-Text">
             เข้าใจทั้งศิลป์และกลยุทธ์ (Art + Marketing Balance)
             ทุกชิ้นงานออกแบบจากแนวคิดทางการตลาด
-          </p>
-          <p>
+          </div>
+          <div className="Graphic-dot-Text">
             ทีมดีไซน์เฉพาะทางในแต่ละแพลตฟอร์ม ไม่ว่าจะเป็น Facebook, Google,
             TikTok, Instagram
-          </p>
-          <p>
+          </div>
+          <div className="Graphic-dot-Text">
             ดูแลตั้งแต่ Visual Identity ถึง Campaign Creative
             เพื่อความต่อเนื่องของแบรนด์
-          </p>
+          </div>
         </div>
       </div>
 
