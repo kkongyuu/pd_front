@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Content_marketing from "../components/content_marketing/contents_marketing.jsx";
+import Contact from "../components/Contact";
 
 function Contents_Marketing() {
   useEffect(() => {
@@ -12,6 +13,7 @@ function Contents_Marketing() {
   return (
     <main>
       <Content_marketing />
+      <Contact />
     </main>
   );
 }

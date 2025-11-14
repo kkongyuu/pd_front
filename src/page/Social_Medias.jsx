@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import Advertising from "../components/Advertising/Advertising.jsx";
+import Social_Media_content from "../components/Social_Media/Social_Media_content.jsx";
 import Contact from "../components/Contact";
 
-function Advertising_screen() {
+function Social_Medias() {
   useEffect(() => {
     // เลื่อนไปที่ top ของหน้าเมื่อ component โหลด
     window.scrollTo({
@@ -12,10 +12,10 @@ function Advertising_screen() {
   }, []);
   return (
     <main>
-      <Advertising />
+      <Social_Media_content />
       <Contact />
     </main>
   );
 }
 
-export default Advertising_screen;
+export default Social_Medias;

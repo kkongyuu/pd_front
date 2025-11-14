@@ -22,6 +22,7 @@ import Marketing from "./page/Marketing";
 import Advertising_screen from "./page/Advertising_screen";
 import Graphics from "./page/Graphic";
 import Contents_Marketing from "./page/Content_Marketing";
+import Social_Medias from "./page/Social_Medias";
 
 function App() {
   useEffect(() => {
@@ -89,9 +90,9 @@ function App() {
       <div id="scroll-bar"></div>
       <div id="particles-js"></div>
       <BrowserRouter>
-        <div className="app-wrapper">
+        {/* <div className="app-wrapper"> */}
           <NavBar />
-          <div className="main-content">
+          {/* <div className="main-content"> */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/package" element={<Package />} />
@@ -104,10 +105,11 @@ function App() {
                 path="/content_marketing"
                 element={<Contents_Marketing />}
               />
+              <Route path="social_media" element={<Social_Medias />} />
             </Routes>
-          </div>
+          {/* </div> */}
           <Footer />
-        </div>
+        {/* </div> */}
       </BrowserRouter>
     </>
   );

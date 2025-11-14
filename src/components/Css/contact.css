@@ -1,0 +1,9 @@
+.contact_Containner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    flex-direction: column;
+    text-align: center;
+    scroll-margin-top: 100px;
+}

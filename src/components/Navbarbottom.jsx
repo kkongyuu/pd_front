@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import Logo from "../assets/img/logo/logo.png";
+import "../components/Css/navbar.css";
 
 function NavBarbottom() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,11 @@ function NavBarbottom() {
       <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </button>
+
       <ul>
+        <li>
+          <img src={Logo} alt="Logo" className="icon-nav" />
+        </li>
         <li>
           <Link to="/" className="brand">
             PD Marketing Innovate

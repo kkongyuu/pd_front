@@ -1,4 +1,4 @@
-import "../Css/Advertising/Advertising.css";
+import "./Css/Advertising.css";
 
 function Advertising() {
   return (

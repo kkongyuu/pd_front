@@ -29,7 +29,7 @@ const services = [
     link: "/graphics",
   },
   { img: content, text: "Content Marketing", link: "/content_marketing" },
-  { img: social, text: "Social Media Marketing", link: "" },
+  { img: social, text: "Social Media Marketing", link: "social_media" },
   { img: seo, text: "SEO", link: "" },
   { img: website, text: "Website", link: "" },
   { img: crm, text: "ระบบบริหารลูกค้า (CRM System)", link: "" },

@@ -1,4 +1,4 @@
-import "../Css/Graphicscss/Contnet_graphic.css";
+import "./Css/Contnet_graphic.css";
 
 function Content_Graphuics() {
   return (

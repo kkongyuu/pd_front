@@ -1,4 +1,4 @@
-import "../Css/Digital_marketing/preface.css";
+import "./Css//preface.css";
 
 function Preface() {
   return (

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+import Contact from "../components/Contact";
 import Content_Graphuics from "../components/Graphic/Graphics";
 
 function Graphics() {
@@ -13,6 +13,7 @@ function Graphics() {
   return (
     <main>
       <Content_Graphuics />
+      <Contact />
     </main>
   );
 }

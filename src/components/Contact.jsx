@@ -1,6 +1,9 @@
+
+import "../components/Css/contact.css"
+
 function Contact() {
   return (
-    <section id="contact">
+    <div id="contact" className="contact_Containner">
       <div className="section-content">
         <h2>ติดต่อเรา</h2>
         <p>
@@ -10,7 +13,7 @@ function Contact() {
           🏢 :2/19-21 โครงการเวร่า ถ.ราษฎร์พัฒนา แขวงสะพานสูง เขตสะพานสูง กรุงเทพมหานคร 10240 
         </p>
       </div>
-    </section>
+    </div>
   )
 }
 export default Contact
