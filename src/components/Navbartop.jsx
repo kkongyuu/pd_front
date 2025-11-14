@@ -1,7 +1,7 @@
 // NavBar.jsx
 import { useState } from "react";
 import { FaLine } from "react-icons/fa";
-import "../components/Css/navbar.css"
+// import "../components/Css/navbar.css"
 
 function NavBarTop() {
   const [language, setLanguage] = useState("TH");
@@ -29,7 +29,9 @@ function NavBarTop() {
         </li>
       </ul>
 
-      <ul className="nav-right">
+      <ul
+      //  className="nav-right"
+       >
         <li>
           <p style={{ fontSize: "20px", fontWeight: "400" }}>
             Tel: 098-923-2424

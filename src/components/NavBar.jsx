@@ -1,6 +1,6 @@
 // ์NavBar.jsx
 import { useState } from "react";
-import "../components/Css/navbar.css";
+// import "../components/Css/navbar.css";s
 import NavBarbottom from "./Navbarbottom";
 import NavBarTop from "./Navbartop";
 
