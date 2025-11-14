@@ -7,9 +7,9 @@ import marketing from "../assets/img/service/marketing.png";
 import online from "../assets/img/service/online.png";
 import graphic from "../assets/img/service/Graphic_Design.png";
 import content from "../assets/img/service/content.jpg";
-import social from "../assets/img/service/social.jpg";
+import social from "../assets/img/service/social_latest.jpg";
 import seo from "../assets/img/service/seo.jpg";
-import website from "../assets/img/service/website.jpg";
+import website from "../assets/img/service/website_latest.jpg";
 import crm from "../assets/img/service/customer_service.png";
 
 const services = [
