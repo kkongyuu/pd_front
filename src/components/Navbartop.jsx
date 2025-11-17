@@ -1,5 +1,5 @@
 // NavBar.jsx
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FaLine } from "react-icons/fa";
 // import "../components/Css/navbar.css"
 
@@ -17,20 +17,19 @@ function NavBarTop() {
       if (!combo) return;
 
       // เก็บค่าเดิมก่อนเปลี่ยน
-      const oldValue = combo.value;
+      const oldValue = combo.value === "" ? "TH" : combo.value;
       console.log("ค่า combo.value เดิม:", oldValue);
-      console.log("type ของ oldValue:", typeof oldValue);
 
       // เปลี่ยนค่า
       if (lang === "EN") {
-        combo.value = "en";
-      } else if (lang === "TH") {
+        combo.value = "";
+      } else {
         console.log("reset กลับภาษา default (ภาษาไทยจริง)");
-        window.location.reload();
+        combo.value = ""; // reset กลับภาษา default
       }
 
       // log ค่าใหม่
-      const newValue = combo.value;
+      const newValue = combo.value === "" ? "TH" : combo.value;
       console.log("ค่า combo.value ใหม่:", newValue);
 
       combo.dispatchEvent(new Event("change"));
