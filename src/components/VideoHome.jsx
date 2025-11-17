@@ -7,7 +7,6 @@ const VideoHome = () => {
 
   return (
     <div className="video-home-container">
-    
       <video
         className="video-home-iframe"
         src={pdVideo}
@@ -23,5 +22,4 @@ const VideoHome = () => {
   );
 };
 
-
-export default VideoHome
+export default VideoHome;
