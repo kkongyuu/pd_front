@@ -1,5 +1,5 @@
 // NavBar.jsx
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaLine } from "react-icons/fa";
 // import "../components/Css/navbar.css"
 
@@ -7,9 +7,36 @@ function NavBarTop() {
   const [language, setLanguage] = useState("TH");
 
   const handleChangeLanguage = (lang) => {
+    console.log("ภาษาเดิมก่อนเปลี่ยนคือ:", language);
+    console.log("กำลังเปลี่ยนเป็น:", lang);
+
     setLanguage(lang);
-    console.log("Selected language:", lang);
-    // ตรงนี้สามารถเพิ่ม logic เปลี่ยนเนื้อหาเว็บตามภาษา
+
+    try {
+      const combo = document.querySelector(".goog-te-combo");
+      if (!combo) return;
+
+      // เก็บค่าเดิมก่อนเปลี่ยน
+      const oldValue = combo.value;
+      console.log("ค่า combo.value เดิม:", oldValue);
+      console.log("type ของ oldValue:", typeof oldValue);
+
+      // เปลี่ยนค่า
+      if (lang === "EN") {
+        combo.value = "en";
+      } else if (lang === "TH") {
+        console.log("reset กลับภาษา default (ภาษาไทยจริง)");
+        window.location.reload();
+      }
+
+      // log ค่าใหม่
+      const newValue = combo.value;
+      console.log("ค่า combo.value ใหม่:", newValue);
+
+      combo.dispatchEvent(new Event("change"));
+    } catch (error) {
+      console.error("เกิดข้อผิดพลาดในการเปลี่ยนภาษา:", error);
+    }
   };
 
   return (
@@ -31,7 +58,7 @@ function NavBarTop() {
 
       <ul
       //  className="nav-right"
-       >
+      >
         <li>
           <p style={{ fontSize: "20px", fontWeight: "400" }}>
             Tel: 098-923-2424
@@ -45,6 +72,8 @@ function NavBarTop() {
         >
           <FaLine size={30} />
         </a>
+
+        {/* ปุ่มเลือกภาษา */}
         <div className="containner-league">
           <h3
             onClick={() => handleChangeLanguage("TH")}
@@ -54,11 +83,11 @@ function NavBarTop() {
               borderRadius: "5px",
               backgroundColor:
                 language === "TH" ? "var(--primary)" : "transparent",
-            //   color: language === "TH" ? "#fff" : "#000",
             }}
           >
             ไทย
           </h3>
+
           <h3
             onClick={() => handleChangeLanguage("EN")}
             style={{
@@ -67,7 +96,6 @@ function NavBarTop() {
               borderRadius: "5px",
               backgroundColor:
                 language === "EN" ? "var(--primary)" : "transparent",
-            //   color: language === "EN" ? "#fff" : "#000",
               marginLeft: "5px",
             }}
           >
@@ -80,4 +108,3 @@ function NavBarTop() {
 }
 
 export default NavBarTop;
-

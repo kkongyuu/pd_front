@@ -3,6 +3,42 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/img/logo/logo.png";
 // import "../components/Css/navbar.css";
 
+const Services = [
+  { text: "การตลาดออนไลน์ (Digital Marketing Strategy)", Link: "/marketing" },
+  { text: "โฆษณาออนไลน์ (Online Advertising)", Link: "/advertising" },
+  { text: "SEO", Link: "/search_engine" },
+  { text: "Social Media Marketing", Link: "/social_media" },
+  {
+    text: "กราฟิกและออกแบบสื่อ (Graphic Design & Creative Content)",
+    Link: "/graphics",
+  },
+  { text: "Content Marketing", Link: "/content_marketing" },
+  { text: "Website", Link: "/website" },
+  { text: "CRM", Link: "/crm_systems" },
+];
+
+
+
+const Works = [
+  { text: "รวมผลงาน", Link: "" },
+  { text: "กรณีศึกษา", Link: "" },
+];
+
+const tools = [
+  { text: "AI Tools", Link: "" },
+  { text: "SEO Tools", Link: "" },
+];
+
+const advice = [
+  { text: "บทความธุรกิจ", Link: "" },
+  { text: "เคล็ดลับการตลาด", Link: "" },
+];
+
+const about = [
+  { text: "ทีมงาน", Link: "" },
+  { text: "พันธกิจของเรา", Link: "" },
+];
+
 function NavBarbottom() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -18,9 +54,9 @@ function NavBarbottom() {
       </button>
 
       <ul>
-        {/* <li>
+        <li>
           <img src={Logo} alt="Logo" className="icon-nav" />
-        </li> */}
+        </li>
         <li>
           <Link to="/" className="brand">
             PD Marketing Innovate
@@ -30,6 +66,7 @@ function NavBarbottom() {
 
       <div>
         <ul className={`nav-menu ${menuOpen ? "open" : ""}`}>
+          {/* บริการของเรา */}
           <li
             className={`dropdown ${
               activeDropdown === "services" ? "active" : ""
@@ -38,48 +75,45 @@ function NavBarbottom() {
           >
             <span>บริการของเรา ▼</span>
             <ul className="dropdown-menu">
-              <li>
-                <Link to="/ads">โฆษณาออนไลน์</Link>
-              </li>
-              <li>
-                <Link to="/branding">สร้างแบรนด์</Link>
-              </li>
-              <li>
-                <Link to="/web">ออกแบบเว็บไซต์</Link>
-              </li>
+              {Services.map((item, index) => (
+                <li key={index}>
+                  <Link to={item.Link}>{item.text}</Link>
+                </li>
+              ))}
             </ul>
           </li>
 
+          {/* ผลงานลูกค้า */}
           <li
             className={`dropdown ${activeDropdown === "works" ? "active" : ""}`}
             onClick={() => toggleDropdown("works")}
           >
             <span>ผลงานลูกค้า ▼</span>
             <ul className="dropdown-menu">
-              <li>
-                <Link to="/portfolio">รวมผลงาน</Link>
-              </li>
-              <li>
-                <Link to="/case-study">กรณีศึกษา</Link>
-              </li>
+              {Works.map((item, index) => (
+                <li key={index}>
+                  <Link to={item.Link}>{item.text}</Link>
+                </li>
+              ))}
             </ul>
           </li>
 
+          {/* เครื่องมือการตลาด */}
           <li
             className={`dropdown ${activeDropdown === "tools" ? "active" : ""}`}
             onClick={() => toggleDropdown("tools")}
           >
             <span>เครื่องมือการตลาด ▼</span>
             <ul className="dropdown-menu">
-              <li>
-                <Link to="/ai-tools">AI Tools</Link>
-              </li>
-              <li>
-                <Link to="/seo-tools">SEO Tools</Link>
-              </li>
+              {tools.map((item, index) => (
+                <li key={index}>
+                  <Link to={item.Link}>{item.text}</Link>
+                </li>
+              ))}
             </ul>
           </li>
 
+          {/* คำแนะนำธุรกิจ */}
           <li
             className={`dropdown ${
               activeDropdown === "advice" ? "active" : ""
@@ -88,27 +122,26 @@ function NavBarbottom() {
           >
             <span>คำแนะนำธุรกิจ ▼</span>
             <ul className="dropdown-menu">
-              <li>
-                <Link to="/articles">บทความธุรกิจ</Link>
-              </li>
-              <li>
-                <Link to="/tips">เคล็ดลับการตลาด</Link>
-              </li>
+              {advice.map((item, index) => (
+                <li key={index}>
+                  <Link to={item.Link}>{item.text}</Link>
+                </li>
+              ))}
             </ul>
           </li>
 
+          {/* เกี่ยวกับเรา */}
           <li
             className={`dropdown ${activeDropdown === "about" ? "active" : ""}`}
             onClick={() => toggleDropdown("about")}
           >
             <span>เกี่ยวกับเรา ▼</span>
             <ul className="dropdown-menu">
-              <li>
-                <Link to="/team">ทีมงาน</Link>
-              </li>
-              <li>
-                <Link to="/mission">พันธกิจของเรา</Link>
-              </li>
+              {about.map((item, index) => (
+                <li key={index}>
+                  <Link to={item.Link}>{item.text}</Link>
+                </li>
+              ))}
             </ul>
           </li>
 

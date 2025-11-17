@@ -24,6 +24,8 @@ import Graphics from "./page/Graphic";
 import Contents_Marketing from "./page/Content_Marketing";
 import Social_Medias from "./page/Social_Medias";
 import Search_Engine_Optimization from "./page/Search_Engine_Contents";
+import WebSite from "./page/WebSite";
+import CRM_Systems from "./page/CRM_System";
 
 function App() {
   useEffect(() => {
@@ -106,11 +108,13 @@ function App() {
                 path="/content_marketing"
                 element={<Contents_Marketing />}
               />
-              <Route path="social_media" element={<Social_Medias />} />
+              <Route path="/social_media" element={<Social_Medias />} />
               <Route
-                path="search_engine"
+                path="/search_engine"
                 element={<Search_Engine_Optimization />}
               />
+              <Route path="/website" element={<WebSite />} />
+              <Route path="/crm_systems" element={<CRM_Systems />} />
             </Routes>
           </div>
           <Footer />

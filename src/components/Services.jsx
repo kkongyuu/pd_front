@@ -31,8 +31,8 @@ const services = [
   { img: content, text: "Content Marketing", link: "/content_marketing" },
   { img: social, text: "Social Media Marketing", link: "/social_media" },
   { img: seo, text: "SEO", link: "/search_engine" },
-  { img: website, text: "Website", link: "" },
-  { img: crm, text: "ระบบบริหารลูกค้า (CRM System)", link: "" },
+  { img: website, text: "Website", link: "/website" },
+  { img: crm, text: "ระบบบริหารลูกค้า (CRM System)", link: "/crm_systems" },
 ];
 
 function Services() {
