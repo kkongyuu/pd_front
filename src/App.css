@@ -178,6 +178,14 @@ nav {
   margin-right: 20px;
 }
 
+.banner-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* จำเป็นสำหรับ z-index */
+  z-index: 1;
+}
+
 /* .nav-center {
   position: absolute;
   left: 50%;
@@ -775,7 +783,7 @@ input:checked+.slider:before {
 
   nav {
     /* padding: 0 1rem; */
-    position: fixed;
+    position: sticky;
     top: 0;
   }
 
@@ -1074,3 +1082,35 @@ input:checked+.slider:before {
 .services-slider button.next {
   right: 0;
 } */
+
+
+
+/*======================== google translate ====================== */
+
+/* ซ่อนแบนเนอร์ Google Translate */
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+[class^="VIpgJd"],
+iframe[id^=":"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  height: 0 !important;
+}
+
+/* ป้องกัน body ถูกดันลง */
+body {
+  top: 0 !important;
+}
+
+/* ซ่อน tooltip highlight */
+.goog-tooltip,
+.goog-tooltip:hover {
+  display: none !important;
+}
+
+/* ซ่อนพื้นหลังไฮไลต์ที่ Google สร้าง */
+.goog-text-highlight {
+  background: transparent !important;
+  box-shadow: none !important;
+}

@@ -2,9 +2,33 @@
 import { useState } from "react";
 import { FaLine } from "react-icons/fa";
 // import "../components/Css/navbar.css"
+import { useNavigate } from "react-router-dom";
 
 function NavBarTop() {
   const [language, setLanguage] = useState("TH");
+  const navigate = useNavigate();
+
+  const translateTo = (lang) => {
+    const combo = document.querySelector(".goog-te-combo");
+    if (combo) {
+      combo.value = lang;
+      combo.dispatchEvent(new Event("change"));
+    }
+  };
+
+  const softReload = () => {
+    navigate(0); // React Router reload UI แต่ไม่ reload tab
+  };
+
+  const resetTranslate = () => {
+    // ลบ cookie
+    document.cookie =
+      "googtrans=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT;";
+    document.cookie = `googtrans=;domain=${window.location.hostname};path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT;`;
+
+    // Soft Reload เฉพาะหน้า React
+    softReload();
+  };
 
   const handleChangeLanguage = (lang) => {
     console.log("ภาษาเดิมก่อนเปลี่ยนคือ:", language);
@@ -12,29 +36,11 @@ function NavBarTop() {
 
     setLanguage(lang);
 
-    try {
-      const combo = document.querySelector(".goog-te-combo");
-      if (!combo) return;
-
-      // เก็บค่าเดิมก่อนเปลี่ยน
-      const oldValue = combo.value === "" ? "TH" : combo.value;
-      console.log("ค่า combo.value เดิม:", oldValue);
-
-      // เปลี่ยนค่า
-      if (lang === "EN") {
-        combo.value = "";
-      } else {
-        console.log("reset กลับภาษา default (ภาษาไทยจริง)");
-        combo.value = ""; // reset กลับภาษา default
-      }
-
-      // log ค่าใหม่
-      const newValue = combo.value === "" ? "TH" : combo.value;
-      console.log("ค่า combo.value ใหม่:", newValue);
-
-      combo.dispatchEvent(new Event("change"));
-    } catch (error) {
-      console.error("เกิดข้อผิดพลาดในการเปลี่ยนภาษา:", error);
+    // สั่ง Google Translate
+    if (lang === "EN") {
+      translateTo("en"); // แปลเป็นอังกฤษ
+    } else if (lang === "TH") {
+      resetTranslate(); // ปิดการแปล
     }
   };
 

@@ -5,12 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
-// import NavBarbottom from "./components/Navbarbottom";
-// import Hero from "./components/Hero";
-// import Services from "./components/Services";
-// import Team from "./components/Team";
-
 import Footer from "./components/Footer";
+import Banner from "./components/Banners";
 
 //page
 import Home from "./page/Home";
@@ -90,10 +86,12 @@ function App() {
       <div id="loading-overlay">
         <div className="spinner-logo">PD</div>
       </div>
+
       <div id="scroll-bar"></div>
       <div id="particles-js"></div>
       <BrowserRouter>
         <div className="app-wrapper">
+          <Banner />
           <NavBar />
           <div className="main-content">
             <Routes>
