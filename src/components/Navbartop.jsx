@@ -15,15 +15,21 @@ function NavBarTop() {
   };
 
   const resetTranslate = () => {
-    // ลบ cookie ของ Google Translate
-    document.cookie =
-      "googtrans=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;";
-    document.cookie =
-      "googtrans=;expires=Thu, 01 Jan 1970 00:00:00 GMT;domain=" +
-      window.location.hostname +
-      ";path=/;";
+    const domains = [
+      window.location.hostname,
+      "." + window.location.hostname.replace(/^www\./, ""),
+      window.location.hostname.includes(".")
+        ? window.location.hostname.substring(
+            window.location.hostname.indexOf(".")
+          )
+        : "",
+    ];
 
-    // รีโหลดหน้า
+    domains.forEach((d) => {
+      document.cookie = `googtrans=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;`;
+      document.cookie = `googtrans=;expires=Thu, 01 Jan 1970 00:00:00 GMT;domain=${d};path=/;`;
+    });
+
     window.location.reload();
   };
 
