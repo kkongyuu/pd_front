@@ -2,11 +2,9 @@
 import { useState } from "react";
 import { FaLine } from "react-icons/fa";
 // import "../components/Css/navbar.css"
-import { useNavigate } from "react-router-dom";
 
 function NavBarTop() {
   const [language, setLanguage] = useState("TH");
-  const navigate = useNavigate();
 
   const translateTo = (lang) => {
     const combo = document.querySelector(".goog-te-combo");
@@ -16,18 +14,17 @@ function NavBarTop() {
     }
   };
 
-  const softReload = () => {
-    navigate(0); // React Router reload UI แต่ไม่ reload tab
-  };
-
   const resetTranslate = () => {
-    // ลบ cookie
+    // ลบ cookie ของ Google Translate
     document.cookie =
-      "googtrans=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT;";
-    document.cookie = `googtrans=;domain=${window.location.hostname};path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT;`;
+      "googtrans=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;";
+    document.cookie =
+      "googtrans=;expires=Thu, 01 Jan 1970 00:00:00 GMT;domain=" +
+      window.location.hostname +
+      ";path=/;";
 
-    // Soft Reload เฉพาะหน้า React
-    softReload();
+    // รีโหลดหน้า
+    window.location.reload();
   };
 
   const handleChangeLanguage = (lang) => {
