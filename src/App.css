@@ -310,7 +310,7 @@ section {
 
 /*hero compnent*/
 .hero {
-  margin-top: 90px;
+  margin-top: 0px;
 }
 
 .hero h1 {
@@ -419,7 +419,7 @@ section {
 
 @media (max-width: 768px) {
   .hero {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 
   .hero h1 {
@@ -458,7 +458,7 @@ section {
 
 @media (max-width: 480px) {
   .hero {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 
   .hero h1 {
@@ -881,11 +881,11 @@ input:checked+.slider:before {
 
 /* ====== new css developer toel ====== */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hero {
     margin-top: 90px;
   }
-}
+} */
 
 .nav-top {
   display: flex;
