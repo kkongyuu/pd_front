@@ -5,6 +5,7 @@ import Line from "../assets/img/floating/Line.png"; //900x473
 import Call from "../assets/img/floating/call.jpg"; //980x980
 import weChat from "../assets/img/floating/WeChat.png"; //800x800
 import Email from "../assets/img/floating/Email.webp"; // 980x980
+import WhatsApp from "../assets/img/floating/WhatApp.png"; // 980x980
 
 function FloatingMenu() {
   const [open, setOpen] = useState(false);
@@ -25,9 +26,9 @@ function FloatingMenu() {
       showLabel: true,
     },
     {
-      image: weChat,
-      label: "WeChat: pd.marketinginnovate",
-      action: () => alert("WeChat clicked!"),
+      image: WhatsApp,
+      label: "WhatsApp: ",
+      action: () => window.open("https://wa.me/", "_blank"),
       showLabel: true,
     },
     {
