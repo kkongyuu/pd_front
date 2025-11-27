@@ -27,8 +27,8 @@ function FloatingMenu() {
     },
     {
       image: WhatsApp,
-      label: "WhatsApp: ",
-      action: () => window.open("https://wa.me/", "_blank"),
+      label: "WhatsApp: 0989232424 ",
+      action: () => window.open("https://wa.me/66989232424", "_blank"),
       showLabel: true,
     },
     {
