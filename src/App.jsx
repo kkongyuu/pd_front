@@ -7,6 +7,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Banner from "./components/Banners";
+import FloatingMenu from "./components/FloatingMenu";
 
 //page
 import Home from "./page/Home";
@@ -93,6 +94,8 @@ function App() {
         <div className="app-wrapper">
           <Banner />
           <NavBar />
+
+          <FloatingMenu />
           <div className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />

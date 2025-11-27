@@ -1,0 +1,132 @@
+/* Container ลอยอยู่มุมล่างขวา */
+.floating-menu {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Wrapper สำหรับปุ่มย่อยและ tooltip */
+.fab-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.3s forwards;
+  position: relative;
+}
+
+/* ปุ่มหลัก */
+.fab {
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+}
+
+/* ปุ่มย่อย */
+.fab-sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--text);
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 48px;
+  height: 48px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.fab-sub:hover {
+  background-color: #ffe4f0;
+  transform: scale(1.1);
+  box-shadow: var(--primary);
+}
+
+/* รูปภาพใน icon - ทำให้เต็มปุ่มและไม่บิดเบี้ยว */
+.fab-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+/* Tooltip/Label ของปุ่มย่อย - ซ่อนไว้ตอนปกติ */
+.fab-tooltip {
+  background-color: white;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+/* แสดง tooltip เมื่อ hover ที่ wrapper */
+.fab-wrapper:hover .fab-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* Animation ขึ้น */
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 768px) {
+  .floating-menu {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .fab {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+  }
+
+  .fab-sub {
+    width: 44px;
+    height: 44px;
+  }
+
+  .fab-tooltip {
+    font-size: 12px;
+    padding: 6px 10px;
+    max-width: 200px;
+  }
+}
