@@ -9,7 +9,6 @@ import WhatsApp from "../assets/img/floating/WhatApp.png"; // 980x980
 
 function FloatingMenu() {
   const [open, setOpen] = useState(false);
-
   const toggleMenu = () => setOpen(!open);
 
   const menuItems = [
