@@ -14,6 +14,9 @@ import pd from "../../assets/img/we_work/PD.png";
 import ppdd from "../../assets/img/we_work/ppdd.png";
 import prizemed from "../../assets/img/we_work/prizemed.png";
 import youencare from "../../assets/img/we_work/youencare.png";
+import Luxu from "../../assets/img/we_work/Luxu.png";
+import Phu from "../../assets/img/we_work/phu.png";
+import WTrip from "../../assets/img/we_work/WTrip.png";
 
 const company = [
   uniquecare,
@@ -30,6 +33,9 @@ const company = [
   ppdd,
   prizemed,
   youencare,
+  Luxu,
+  Phu,
+  WTrip,
 ];
 
 function shuffleArray(array) {
