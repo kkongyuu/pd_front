@@ -23,6 +23,7 @@ import Social_Medias from "./page/Social_Medias";
 import Search_Engine_Optimization from "./page/Search_Engine_Contents";
 import WebSite from "./page/WebSite";
 import CRM_Systems from "./page/CRM_System";
+import Performance from "./page/performance";
 
 function App() {
   useEffect(() => {
@@ -116,6 +117,7 @@ function App() {
               />
               <Route path="/website" element={<WebSite />} />
               <Route path="/crm_systems" element={<CRM_Systems />} />
+              <Route path="/performance" element={<Performance />} />
             </Routes>
           </div>
           <Footer />

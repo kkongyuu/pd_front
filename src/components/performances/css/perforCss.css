@@ -1,0 +1,38 @@
+/* package */
+.containner-performance {
+    margin-top: 90px;
+    /* align-items: center; <--- REMOVE OR IGNORE IF NOT FLEX/GRID */
+    text-align: center;
+    /* ⭐ NEW: Center text inside the container */
+}
+
+.containner-performance h1 {
+    font-size: 4.5rem;
+    color: var(--primary);
+    /* margin-bottom: 1rem; */
+    /* align-items: center; <--- REMOVE THIS, it doesn't align text */
+    text-shadow: 0 0 20px #d59f38;
+}
+
+.performance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    /* ลดระยะห่าง */
+    margin: 2rem 0;
+    align-items: start;
+    /* จัดให้รูปอยู่ระดับเดียวกัน */
+}
+
+.performance-grid img {
+    width: 100%;
+    max-width: 550px;
+    /* ปรับขนาดตามต้องการ */
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+    margin: 0 auto;
+    /* จัดรูปให้อยู่ตรงกลาง column */
+    display: block;
+    margin-top: 80px;
+}
