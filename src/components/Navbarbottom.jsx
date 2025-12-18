@@ -17,10 +17,7 @@ const Services = [
   { text: "CRM", Link: "/crm_systems" },
 ];
 
-const Works = [
-  { text: "รวมผลงาน", Link: "/performance" },
-  { text: "กรณีศึกษา", Link: "" },
-];
+const Works = [{ text: "รวมผลงาน", Link: "/performance" }];
 
 const tools = [
   { text: "AI Tools", Link: "" },
