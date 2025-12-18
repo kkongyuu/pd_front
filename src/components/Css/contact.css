@@ -1,7 +1,7 @@
 .contact_Containner {
     display: grid;
-    grid-template-columns: 1.4fr 0.7fr 0.7fr 0.7fr;
-    gap: 2rem;
+    grid-template-columns: 0.9fr 0.9fr 0.7fr 0.7fr;
+    gap: 1rem;
     padding: 5rem 7%;
     width: 100%;
     align-items: start;
@@ -19,7 +19,6 @@
 /* ส่วนที่ 1: Logo */
 .contact-logos {
     width: 220px;
-    /* เพิ่มขนาดจาก 190px */
     height: auto;
     margin: 0 auto;
     transition: transform 0.3s ease;
@@ -29,15 +28,13 @@
     transform: scale(1.05);
 }
 
-/* หัวข้อ h3 */
+
 .contact-box h3 {
     font-size: 2.8rem;
-    /* เพิ่มขนาด */
     color: var(--primary);
     text-align: left;
     margin-bottom: 1.5rem;
     font-weight: 700;
-
 }
 
 /* ส่วนที่ 2: Address */
@@ -97,7 +94,7 @@
     .contact_Containner {
         grid-template-columns: 1fr 1fr;
         /* ปรับเป็น 2 คอลัมน์ในแท็บเล็ต */
-        gap: 4rem;
+        gap: 2rem;
     }
 }
 

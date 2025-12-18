@@ -29,16 +29,47 @@ function Contact() {
         <div className="contact-flex-container">
           <div className="contact-info-list">
             <p>
-              <strong>Tel :</strong> 098-9232424
+              <strong>Tel :</strong>{" "}
+              <a
+                href="tel:0989232424"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                098-9232424
+              </a>
             </p>
+
             <p>
-              <strong>Facebook :</strong> PD Marketing
+              <strong>Facebook :</strong>{" "}
+              <a
+                href="https://www.facebook.com/PDinnovates?locale=th_TH"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                PD Marketing
+              </a>
             </p>
+
             <p>
-              <strong>Email :</strong> Pdmarketing@gmail.com
+              <strong>Email :</strong>{" "}
+              <a
+                href="mailto:Pdmarketing@gmail.com"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                Pdmarketing@gmail.com
+              </a>
             </p>
-            <p style={{ color: "#00ff00" }}>
-              <strong>Line :</strong> @pdmarketing
+
+            <p>
+              <strong>Line :</strong>{" "}
+              <a
+                href="https://lin.ee/Z0QkSgU"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#00ff00", textDecoration: "none" }}
+              >
+                @pdmarketing
+              </a>
             </p>
           </div>
         </div>
