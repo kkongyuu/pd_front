@@ -53,10 +53,10 @@ function Contact() {
             <p>
               <strong>Email :</strong>{" "}
               <a
-                href="mailto:Pdmarketing@gmail.com"
+                href="mailto: Pdmarketinginnovate@gamil.com"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                Pdmarketing@gmail.com
+                Pdmarketinginnovate@gamil.com
               </a>
             </p>
 
@@ -66,7 +66,7 @@ function Contact() {
                 href="https://lin.ee/Z0QkSgU"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#00ff00", textDecoration: "none" }}
+                style={{ textDecoration: "none", color: "inherit" }}
               >
                 @pdmarketing
               </a>
