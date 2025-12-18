@@ -20,8 +20,13 @@ const Services = [
 const Works = [{ text: "รวมผลงาน", Link: "/performance" }];
 
 const tools = [
-  { text: "AI Tools", Link: "" },
-  { text: "SEO Tools", Link: "" },
+  { text: "Facebook Ads", link: "" },
+  { text: "Google Ads", link: "" },
+  { text: "SWOT Analysis", link: "" },
+  { text: "STP (Segmentation, Targeting, Positioning)", link: "" },
+  { text: "Marketing Mix (4Ps / 7Ps)", link: "" },
+  { text: "Content Marketing", link: "" },
+  { text: "CRM (Customer Relationship Management)", link: "" },
 ];
 
 const advice = [

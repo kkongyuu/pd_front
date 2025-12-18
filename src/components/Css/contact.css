@@ -1,9 +1,130 @@
 .contact_Containner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 2rem;
-    flex-direction: column;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.7fr 0.8fr;
+    gap: 2rem;
+    padding: 5rem 7%;
+    width: 100%;
+    align-items: start;
     scroll-margin-top: 100px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 5%;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* ส่วนที่ 1: Logo */
+.contact-logos {
+    width: 220px;
+    /* เพิ่มขนาดจาก 190px */
+    height: auto;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.contact-logos:hover {
+    transform: scale(1.05);
+}
+
+/* หัวข้อ h3 */
+.contact-box h3 {
+    font-size: 2.8rem;
+    /* เพิ่มขนาด */
+    color: var(--primary);
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+
+}
+
+/* ส่วนที่ 2: Address */
+.address-text {
+    text-align: left;
+    font-size: 1.3rem;
+    /* เพิ่มขนาด */
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+/* ส่วนที่ 3: Contact Info */
+.contact-flex-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contact-info-list p {
+    font-size: 1.3rem;
+    /* เพิ่มขนาด */
+    color: #ffffff;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.contact-info-list strong {
+    color: var(--primary);
+    /* เน้นหัวข้อสีทอง/สีหลัก */
+    margin-right: 5px;
+}
+
+/* ส่วนที่ 4: QR Code */
+.qr-code {
+    width: 210px;
+    /* เพิ่มขนาด */
+    height: auto;
+    border-radius: 12px;
+    background: #fff;
+    padding: 8px;
+    border: 3px solid var(--primary);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    align-self: center;
+    /* จัดให้อยู่กลางในแนวตั้งของแถว */
+}
+
+.qr-code:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(var(--primary-rgb), 0.5);
+}
+
+/* Responsive: สำหรับ Tablet และ Mobile */
+@media (max-width: 1200px) {
+    .contact_Containner {
+        grid-template-columns: 1fr 1fr;
+        /* ปรับเป็น 2 คอลัมน์ในแท็บเล็ต */
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact_Containner {
+        grid-template-columns: 1fr;
+        /* คอลัมน์เดียวในมือถือ */
+        text-align: center;
+        padding: 4rem 5%;
+    }
+
+    .contact-box h3,
+    .address-text,
+    .contact-info-list {
+        text-align: center;
+    }
+
+    .contact-flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-logos {
+        width: 150px;
+    }
+
+    .qr-code {
+        margin: 0 auto;
+    }
 }
