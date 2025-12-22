@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Web_Development_content from "../components/web_development/web_development_content";
+import Web_Development_content from "../components/content/web_development/web_development_content";
 import Contact from "../components/Contact";
 
 function WebSite() {

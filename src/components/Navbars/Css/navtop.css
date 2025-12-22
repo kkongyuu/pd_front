@@ -1,0 +1,91 @@
+/* nav-top */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #d59f38;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+
+
+.nav-left {
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-right {
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.containner-league {
+    border: 1.5px solid var(--primary);
+    padding: 2px 3px;
+    /* ลด padding ให้กระชับ */
+    display: flex;
+    align-items: center;
+    /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    border-radius: 6px;
+    height: 32px;
+    /* เท่ากับขนาดของ FaLine */
+}
+
+.containner-league h3 {
+    font-size: 15px;
+    /* ลดขนาดตัวอักษร */
+    margin: 0;
+    /* เอาช่องว่างเริ่มต้นของ h3 ออก */
+    line-height: 1;
+    font-weight: 400;
+}

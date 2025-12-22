@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Contact from "../components/Contact";
-import Content_Graphuics from "../components/Graphic/Graphics";
+import Content_Graphuics from "../components/content/Graphic/Graphics";
 
 function Graphics() {
   useEffect(() => {

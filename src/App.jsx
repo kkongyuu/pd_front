@@ -4,7 +4,7 @@ import reactLogo from "./assets/react.svg";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import "./App.css";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navbars/NavBar";
 import Footer from "./components/Footer";
 import Banner from "./components/Banners";
 import FloatingMenu from "./components/FloatingMenu";

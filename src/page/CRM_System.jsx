@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import CRM_System_content from "../components/CRM_System/CRM_System_content";
+import CRM_System_content from "../components/content/CRM_System/CRM_System_content";
 import Contact from "../components/Contact";
 
 function CRM_Systems() {

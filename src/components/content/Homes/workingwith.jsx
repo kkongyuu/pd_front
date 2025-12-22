@@ -1,22 +1,22 @@
 import { useMemo } from "react";
 import "./Css/workingwith.css";
-import uniquecare from "../../assets/img/we_work/uniquecare.png";
-import assetelearning from "../../assets/img/we_work/assetelearning.png";
-import healthyshop from "../../assets/img/we_work/360healthy.png";
-import bizconnect from "../../assets/img/we_work/Bizconnect.png";
-import careuhome from "../../assets/img/we_work/careuhome.png";
-import dreamLAb from "../../assets/img/we_work/dreamLAb.png";
-import rmed from "../../assets/img/we_work/Rmed.png";
-import ghealth from "../../assets/img/we_work/Ghealth.png";
-import ledream from "../../assets/img/we_work/ledream.png";
-import medjob from "../../assets/img/we_work/medjob.png";
-import pd from "../../assets/img/we_work/PD.png";
-import ppdd from "../../assets/img/we_work/ppdd.png";
-import prizemed from "../../assets/img/we_work/prizemed.png";
-import youencare from "../../assets/img/we_work/youencare.png";
-import Luxu from "../../assets/img/we_work/Luxu.png";
-import Phu from "../../assets/img/we_work/phu.png";
-import WTrip from "../../assets/img/we_work/WTrip.png";
+import uniquecare from "../../../assets/img/we_work/uniquecare.png";
+import assetelearning from "../../../assets/img/we_work/assetelearning.png";
+import healthyshop from "../../../assets/img/we_work/360healthy.png";
+import bizconnect from "../../../assets/img/we_work/Bizconnect.png";
+import careuhome from "../../../assets/img/we_work/careuhome.png";
+import dreamLAb from "../../../assets/img/we_work/dreamLAb.png";
+import rmed from "../../../assets/img/we_work/Rmed.png";
+import ghealth from "../../../assets/img/we_work/Ghealth.png";
+import ledream from "../../../assets/img/we_work/ledream.png";
+import medjob from "../../../assets/img/we_work/medjob.png";
+import pd from "../../../assets/img/we_work/PD.png";
+import ppdd from "../../../assets/img/we_work/ppdd.png";
+import prizemed from "../../../assets/img/we_work/prizemed.png";
+import youencare from "../../../assets/img/we_work/youencare.png";
+import Luxu from "../../../assets/img/we_work/Luxu.png";
+import Phu from "../../../assets/img/we_work/phu.png";
+import WTrip from "../../../assets/img/we_work/WTrip.png";
 
 const company = [
   uniquecare,

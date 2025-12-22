@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Preface from "../components/Search_Engine/Search_Engine_content.jsx";
+import Preface from "../components/content/Search_Engine/Search_Engine_content.jsx";
 import Contact from "../components/Contact";
 
 function Search_Engine_Optimization() {

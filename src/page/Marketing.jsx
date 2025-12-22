@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Preface from "../components/Digital_marketings/preface.jsx";
+import Preface from "../components/content/Digital_marketings/preface.jsx";
 import Contact from "../components/Contact";
 
 function Marketing() {

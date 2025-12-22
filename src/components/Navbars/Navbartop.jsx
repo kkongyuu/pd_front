@@ -1,7 +1,7 @@
 // NavBar.jsx
 import { useState } from "react";
 import { FaLine } from "react-icons/fa";
-// import "../components/Css/navbar.css"
+import "./Css/navtop.css";
 
 function NavBarTop() {
   const [language, setLanguage] = useState("TH");
@@ -64,9 +64,7 @@ function NavBarTop() {
         </li>
       </ul>
 
-      <ul
-      //  className="nav-right"
-      >
+      <ul>
         <li>
           <p style={{ fontSize: "20px", fontWeight: "400" }}>
             Tel: 098-923-2424
@@ -86,6 +84,7 @@ function NavBarTop() {
           <h3
             onClick={() => handleChangeLanguage("TH")}
             style={{
+              color: language === "TH" ? "var(--fontColor1)" : "var(--primary)",
               cursor: "pointer",
               padding: "5px 10px",
               borderRadius: "5px",
@@ -99,6 +98,7 @@ function NavBarTop() {
           <h3
             onClick={() => handleChangeLanguage("EN")}
             style={{
+              color: language === "EN" ? "var(--fontColor1)" : "var(--primary)",
               cursor: "pointer",
               padding: "5px 10px",
               borderRadius: "5px",

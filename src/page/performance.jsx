@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Performances from "../components/performances/performances.jsx";
+import Performances from "../components/content/performances/performances.jsx";
 import Contact from "../components/Contact";
 
 function Performance() {

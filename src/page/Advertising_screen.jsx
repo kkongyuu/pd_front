@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Advertising from "../components/Advertising/Advertising.jsx";
+import Advertising from "../components/content/Advertising/Advertising.jsx";
 import Contact from "../components/Contact";
 
 function Advertising_screen() {

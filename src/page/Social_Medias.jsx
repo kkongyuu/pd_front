@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Social_Media_content from "../components/Social_Media/Social_Media_content.jsx";
+import Social_Media_content from "../components/content/Social_Media/Social_Media_content.jsx";
 import Contact from "../components/Contact";
 
 function Social_Medias() {

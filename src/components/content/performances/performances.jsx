@@ -1,13 +1,13 @@
 import React from "react";
 import "./css/perforCss.css";
 // 1. Import all images
-import yuencare from "../../assets/img/performances/yuencare.jpg";
-import uniquecare from "../../assets/img/performances/uniquecare.jpg";
-import healthyshop from "../../assets/img/performances/healthyshop.jpg";
-import luxu from "../../assets/img/performances/luxu.jpg";
-import dreamlab from "../../assets/img/performances/dreamlab.jpg";
-import misswellness from "../../assets/img/performances/misswellness.jpg";
-import ledream from "../../assets/img/performances/ledream.jpg";
+import yuencare from "../../../assets/img/performances/yuencare.jpg";
+import uniquecare from "../../../assets/img/performances/uniquecare.jpg";
+import healthyshop from "../../../assets/img/performances/healthyshop.jpg";
+import luxu from "../../../assets/img/performances/luxu.jpg";
+import dreamlab from "../../../assets/img/performances/dreamlab.jpg";
+import misswellness from "../../../assets/img/performances/misswellness.jpg";
+import ledream from "../../../assets/img/performances/ledream.jpg";
 
 // 2. Create an array of the imported image variables
 const performancesData = [

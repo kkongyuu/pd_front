@@ -1,4 +1,4 @@
-import "./Css//preface.css";
+import "./Css/preface.css";
 
 function Preface() {
   return (
