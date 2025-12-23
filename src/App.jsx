@@ -93,7 +93,7 @@ function App() {
       <div id="particles-js"></div>
       <BrowserRouter>
         <div className="app-wrapper">
-          <Banner />
+          {/* <Banner /> */}
           <NavBar />
 
           <FloatingMenu />
