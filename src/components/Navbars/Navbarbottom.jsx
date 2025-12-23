@@ -99,7 +99,7 @@ function NavBarbottom() {
   const renderSectionFooter = () => {
     return (
       <div className="footer-section">
-        <div className="footer-containner">
+        {/* <div className="footer-containner">
           <div className="footer-left">
             <h2>ที่อยู่</h2>
             <p>
@@ -153,7 +153,7 @@ function NavBarbottom() {
               </a>
             </p>
           </div>
-        </div>
+        </div> */}
         <p>© 2024 PD Marketing Innovate. All rights reserved.</p>
       </div>
     );
@@ -276,7 +276,7 @@ function NavBarbottom() {
             </Link>
           </li>
 
-          {/* <div className="sider-footer">{renderSectionFooter()}</div> */}
+          <div className="sider-footer">{renderSectionFooter()}</div>
         </ul>
       </div>
     </div>
