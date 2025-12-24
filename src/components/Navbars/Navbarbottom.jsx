@@ -110,7 +110,7 @@ function NavBarbottom() {
           <div className="footer-right">
             <h2>ติดต่อ</h2>
             <p>
-              <strong>Tel :</strong>{" "}
+              <strong>Tel :</strong>
               <a
                 href="tel:0989232424"
                 style={{ textDecoration: "none", color: "inherit" }}
@@ -188,7 +188,7 @@ function NavBarbottom() {
             }`}
             onClick={(e) => toggleDropdown(e, "services")}
           >
-            <span>บริการของเรา ▼</span>
+            <span>บริการของเรา </span>
             <ul className="dropdown-menu">
               {Services.map((item, index) => (
                 <li key={index}>
@@ -205,7 +205,7 @@ function NavBarbottom() {
             className={`dropdown ${activeDropdown === "works" ? "active" : ""}`}
             onClick={(e) => toggleDropdown(e, "works")}
           >
-            <span>ผลงานลูกค้า ▼</span>
+            <span>ผลงานลูกค้า </span>
             <ul className="dropdown-menu">
               {Works.map((item, index) => (
                 <li key={index}>
@@ -222,7 +222,7 @@ function NavBarbottom() {
             className={`dropdown ${activeDropdown === "tools" ? "active" : ""}`}
             onClick={(e) => toggleDropdown(e, "tools")}
           >
-            <span>เครื่องมือการตลาด ▼</span>
+            <span>เครื่องมือการตลาด </span>
             <ul className="dropdown-menu">
               {tools.map((item, index) => (
                 <li key={index}>
@@ -241,7 +241,7 @@ function NavBarbottom() {
             }`}
             onClick={(e) => toggleDropdown(e, "advice")}
           >
-            <span>คำแนะนำธุรกิจ ▼</span>
+            <span>คำแนะนำธุรกิจ </span>
             <ul className="dropdown-menu">
               {advice.map((item, index) => (
                 <li key={index}>
@@ -258,7 +258,7 @@ function NavBarbottom() {
             className={`dropdown ${activeDropdown === "about" ? "active" : ""}`}
             onClick={(e) => toggleDropdown(e, "about")}
           >
-            <span>เกี่ยวกับเรา ▼</span>
+            <span>เกี่ยวกับเรา </span>
             <ul className="dropdown-menu">
               {about.map((item, index) => (
                 <li key={index}>

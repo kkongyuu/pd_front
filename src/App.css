@@ -44,6 +44,7 @@
   --texthero: #ddddddd7;
   --fontColor1: #f7f6f6;
   --banner-height: -14vh;
+  --menu-border-color: rgba(226, 226, 226, 0.05);
 }
 
 * {
@@ -68,6 +69,7 @@ body.light-mode {
   --texthero: #333333;
   --fontColor1: #ffffff;
   --banner-height: -14vh;
+  --menu-border-color: rgba(20, 20, 20, 0.1);
 }
 
 body.light-mode nav {
@@ -79,7 +81,7 @@ body.light-mode nav a,
 body.light-mode nav strong,
 body.light-mode nav button {
   color: var(--primary);
-  border-color: var(--primary);
+  border-color: var(--menu-border-color);
 }
 
 body.light-mode nav a:hover,
