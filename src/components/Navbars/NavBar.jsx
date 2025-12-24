@@ -9,7 +9,7 @@ import Banner from "../Banners";
 function NavBar() {
   return (
     <nav className="nav">
-      <Banner />
+      {/* <Banner /> */}
       <NavBarTop />
       <NavBarbottom />
     </nav>
