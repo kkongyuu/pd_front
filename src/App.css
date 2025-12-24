@@ -39,7 +39,7 @@
 :root {
   --primary: #d59f38;
   --text: #ffffff;
-  --background-start: #0a0a0a;
+  --background-start: #0a0a0ad3;
   --background-end: #1a0f00;
   --texthero: #ddddddd7;
   --fontColor1: #f7f6f6;
@@ -62,7 +62,7 @@ body {
 }
 
 body.light-mode {
-  --background-start: #fefefe;
+  --background-start: #fefefec9;
   --background-end: #ffffff;
   --text: #1a1a1a;
   --primary: #030303;
