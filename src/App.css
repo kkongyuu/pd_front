@@ -39,12 +39,13 @@
 :root {
   --primary: #d59f38;
   --text: #ffffff;
-  --background-start: #0a0a0ad3;
+  --background-start: #0a0a0af6;
   --background-end: #1a0f00;
-  --texthero: #ddddddd7;
+  --texthero: #f0f0f0ea;
   --fontColor1: #f7f6f6;
   --banner-height: -14vh;
   --menu-border-color: rgba(226, 226, 226, 0.05);
+  --sider-menu-bg: rgb(24, 24, 24);
 }
 
 * {
@@ -62,7 +63,7 @@ body {
 }
 
 body.light-mode {
-  --background-start: #fefefec9;
+  --background-start: #fefefefa;
   --background-end: #ffffff;
   --text: #1a1a1a;
   --primary: #030303;
@@ -70,6 +71,7 @@ body.light-mode {
   --fontColor1: #ffffff;
   --banner-height: -14vh;
   --menu-border-color: rgba(20, 20, 20, 0.1);
+  --sider-menu-bg: rgb(255, 255, 255);
 }
 
 body.light-mode nav {
@@ -185,7 +187,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   flex-direction: column;
   text-align: center;
   scroll-margin-top: 100px;

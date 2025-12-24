@@ -58,7 +58,7 @@
 .nav-menu a:hover,
 .nav-menu span:hover {
     background: var(--primary);
-    color: black;
+    color: var(--fontColor1);
 }
 
 /* ========== Dropdown ========== */
@@ -140,7 +140,7 @@
         width: 320px;
         max-width: 85vw;
         height: 100vh;
-        background: var(--background-start);
+        background: var(--sider-menu-bg);
         display: flex;
         flex-direction: column;
         padding: 0;
