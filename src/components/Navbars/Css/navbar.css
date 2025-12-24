@@ -2,9 +2,10 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+
   background: var(--background-start);
   /* เพิ่มความเข้มพื้นหลังทดแทนความเบลอ */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 
