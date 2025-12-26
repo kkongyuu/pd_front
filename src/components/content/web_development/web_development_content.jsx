@@ -1,4 +1,5 @@
 import "./Css/web_development.css";
+import LeadCatureButton from "../../LeadCaptureButtons";
 
 function Web_Development_content() {
   return (
@@ -201,14 +202,7 @@ function Web_Development_content() {
         ด้วยทีมพัฒนาเว็บไซต์จาก PD Marketing.
       </span>
 
-      <div className="Web_Development-container-button">
-        <button className="Web_Development-btn Web_Development-btnbtn-appointment">
-          นัดหมายพูดคุยฟรี
-        </button>
-        <button className="Web_Development-btn Web_Development-btnbtn-quote">
-          ขอใบเสนอราคา
-        </button>
-      </div>
+      {LeadCatureButton()}
     </section>
   );
 }

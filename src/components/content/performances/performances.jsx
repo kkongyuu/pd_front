@@ -1,5 +1,6 @@
 import React from "react";
 import "./css/perforCss.css";
+import LeadCatureButton from "../../LeadCaptureButtons";
 // 1. Import all images
 import yuencare from "../../../assets/img/performances/yuencare.jpg";
 import uniquecare from "../../../assets/img/performances/uniquecare.jpg";

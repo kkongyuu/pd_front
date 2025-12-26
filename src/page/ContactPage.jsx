@@ -134,7 +134,7 @@ const ContactPage = () => {
             />
           </div>
 
-          <button type="submit">ส่งข้อมูล</button>
+          <button type="submit" className="Contact-btn">ส่งข้อมูล</button>
         </form>
       </div>
       <Contact />

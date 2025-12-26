@@ -1,4 +1,5 @@
 import "./Css/preface.css";
+import LeadCatureButton from "../../LeadCaptureButtons";
 
 function Preface() {
   return (
@@ -114,14 +115,15 @@ function Preface() {
         </div>
       </div>
 
-      <div className="Digital_Marketing-container-button">
+      {LeadCatureButton()}
+      {/* <div className="Digital_Marketing-container-button">
         <button className="Digital_Marketing-btn Digital_Marketing-btn-appointment">
           นัดหมายพูดคุยฟรี
         </button>
         <button className="Digital_Marketing-btn Digital_Marketing-btn-quote">
           ขอใบเสนอราคา
         </button>
-      </div>
+      </div> */}
     </section>
   );
 }

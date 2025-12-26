@@ -1,4 +1,5 @@
 import "./Css/CRM_System.css";
+import LeadCatureButton from "../../LeadCaptureButtons";
 
 function CRM_System_content() {
   return (
@@ -194,14 +195,7 @@ function CRM_System_content() {
         ด้วยทีมพัฒนาเว็บไซต์จาก PD Marketing.
       </span>
 
-      <div className="CRM_System-container-button">
-        <button className="CRM_System-btn CRM_System-btnbtn-appointment">
-          นัดหมายพูดคุยฟรี
-        </button>
-        <button className="CRM_System-btn CRM_System-btnbtn-quote">
-          ขอใบเสนอราคา
-        </button>
-      </div>
+      {LeadCatureButton()}
     </section>
   );
 }

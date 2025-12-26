@@ -1,0 +1,52 @@
+/* ====== css button ======  */
+/* Container ปุ่ม จัดเรียงแนวนอน */
+.LeadCapture-container-button {
+    display: flex;
+    gap: 20px;
+    /* ระยะห่างระหว่างปุ่ม */
+    justify-content: center;
+    /* จัดกลาง container */
+    margin-top: 30px;
+}
+
+/* Style ปุ่มพื้นฐาน */
+.LeadCapture-btn {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* background-color: var(--primary); */
+    /* color: var(--fontColor1); */
+}
+
+/* ปุ่ม "นัดหมายพูดคุยฟรี" */
+.LeadCapture-btn-appointment {
+    /* background-color: #d94f87; dark pink / theme ของคุณ/ */
+    background-color: var(--floating-menu-bg);
+    /* color: #fff; */
+    color: var(--fontColor2);
+}
+
+.LeadCapture-btn-appointment:hover {
+    /* background-color: #ff70a0; */
+    color: var(--fontColor1);
+    transform: scale(1.05);
+}
+
+/* ปุ่ม "ขอใบเสนอราคา" */
+.LeadCapture-btn-quote {
+    background-color: var(--floating-menu-bg);
+    color: var(--fontColor2);
+    /* border: 2px solid #d94f87; */
+}
+
+.LeadCapture-btn-quote:hover {
+    /* background-color: #d94f87; */
+    color: var(--fontColor1);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {}

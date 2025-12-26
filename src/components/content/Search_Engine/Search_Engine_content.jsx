@@ -1,4 +1,5 @@
 import "./Css/Search_Engine_Css.css";
+import LeadCatureButton from "../../LeadCaptureButtons";
 
 function Search_Engine_content() {
   return (
@@ -199,14 +200,7 @@ function Search_Engine_content() {
         Marketing.
       </span>
 
-      <div className="Search_Engine-container-button">
-        <button className="Search_Engine-btn Search_Engine-btnbtn-appointment">
-          นัดหมายพูดคุยฟรี
-        </button>
-        <button className="Search_Engine-btn Search_Engine-btnbtn-quote">
-          ขอใบเสนอราคา
-        </button>
-      </div>
+      {LeadCatureButton()}
     </section>
   );
 }

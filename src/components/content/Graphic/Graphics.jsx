@@ -1,4 +1,5 @@
 import "./Css/Contnet_graphic.css";
+import LeadCatureButton from "../../LeadCaptureButtons";
 
 function Content_Graphuics() {
   return (
@@ -164,14 +165,7 @@ function Content_Graphuics() {
         Graphic & Creative มืออาชีพ ที่เข้าใจทั้งแบรนด์และการตลาด
       </span>
 
-      <div className="Graphic-container-button">
-        <button className="Graphic-btn Graphic-btnbtn-appointment">
-          นัดหมายพูดคุยฟรี
-        </button>
-        <button className="Graphic-btn Graphic-btnbtn-quote">
-          ขอใบเสนอราคา
-        </button>
-      </div>
+      {LeadCatureButton()}
     </section>
   );
 }

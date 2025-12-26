@@ -1,4 +1,5 @@
 import "./Css/Content_marketing.css";
+import LeadCatureButton from "../../LeadCaptureButtons";
 
 function Content_marketing() {
   return (
@@ -187,14 +188,7 @@ function Content_marketing() {
         Content Marketing จาก PD Marketing วันนี้.
       </span>
 
-      <div className="Content_Marketing-container-button">
-        <button className="Content_Marketing-btn Content_Marketing-btnbtn-appointment">
-          นัดหมายพูดคุยฟรี
-        </button>
-        <button className="Content_Marketing-btn Content_Marketing-btnbtn-quote">
-          ขอใบเสนอราคา
-        </button>
-      </div>
+      {LeadCatureButton()}
     </section>
   );
 }

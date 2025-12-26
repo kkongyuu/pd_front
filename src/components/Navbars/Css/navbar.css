@@ -8,6 +8,16 @@ nav {
   /* overflow: hidden; */
 }
 
+/* สร้างชั้นสีฟุ้งๆ ไว้ด้านใน */
+/* nav::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: inherit;
+  filter: blur(20px); 
+  z-index: -1;
+  transform: scale(1.1); 
+} */
 
 nav ul {
   display: flex;

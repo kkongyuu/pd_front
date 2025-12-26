@@ -1,4 +1,5 @@
 import "./Css/Advertising.css";
+import LeadCatureButton from "../../LeadCaptureButtons";
 
 function Advertising() {
   return (
@@ -177,14 +178,7 @@ function Advertising() {
         </div>
       </div>
 
-      <div className="Advertising-container-button">
-        <button className="Advertising-btn Advertising-btnbtn-appointment">
-          นัดหมายพูดคุยฟรี
-        </button>
-        <button className="Advertising-btn Advertising-btnbtn-quote">
-          ขอใบเสนอราคา
-        </button>
-      </div>
+      {LeadCatureButton()}
     </section>
   );
 }

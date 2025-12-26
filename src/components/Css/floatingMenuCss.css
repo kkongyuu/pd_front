@@ -23,6 +23,7 @@
 
 /* ปุ่มหลัก */
 .fab {
+  background-color: var(--floating-menu-bg);
   color: white;
   padding: 15px;
   border-radius: 50%;

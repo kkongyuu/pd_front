@@ -1,4 +1,5 @@
 import "./Css/Social_Media_Css.css";
+import LeadCatureButton from "../../LeadCaptureButtons";
 
 function Social_Media_content() {
   return (
@@ -176,14 +177,7 @@ function Social_Media_content() {
         ช่วยดูแลแบรนด์ของคุณอย่างมืออาชีพ เพื่อให้ทุกโพสต์สร้างผลลัพธ์.
       </span>
 
-      <div className="Social_Media-container-button">
-        <button className="Social_Media-btn Social_Media-btnbtn-appointment">
-          นัดหมายพูดคุยฟรี
-        </button>
-        <button className="Social_Media-btn Social_Media-btnbtn-quote">
-          ขอใบเสนอราคา
-        </button>
-      </div>
+      {LeadCatureButton()}
     </section>
   );
 }

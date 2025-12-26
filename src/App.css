@@ -39,13 +39,15 @@
 :root {
   --primary: #d59f38;
   --text: #ffffff;
-  --background-start: #0a0a0af6;
+  --background-start: #0a0a0ada;
   --background-end: #1a0f00;
   --texthero: #f0f0f0ea;
   --fontColor1: #f7f6f6;
+  --fontColor2: #ffffff;
   --banner-height: -14vh;
   --menu-border-color: rgba(226, 226, 226, 0.05);
   --sider-menu-bg: rgb(24, 24, 24);
+  --floating-menu-bg: #d59f38;
 }
 
 * {
@@ -63,15 +65,17 @@ body {
 }
 
 body.light-mode {
-  --background-start: #fefefefa;
+  --background-start: #fefefee3;
   --background-end: #ffffff;
   --text: #1a1a1a;
   --primary: #030303;
   --texthero: #333333;
   --fontColor1: #ffffff;
+  --fontColor2: #cac8c8;
   --banner-height: -14vh;
   --menu-border-color: rgba(20, 20, 20, 0.1);
   --sider-menu-bg: rgb(255, 255, 255);
+  --floating-menu-bg: #292828;
 }
 
 body.light-mode nav {
