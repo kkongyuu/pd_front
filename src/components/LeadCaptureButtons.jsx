@@ -1,4 +1,4 @@
-import "./Css/LeadCatureButton.css";
+import "./Css/LeadCaturebutton.css";
 
 function LeadCatureButton() {
   return (
